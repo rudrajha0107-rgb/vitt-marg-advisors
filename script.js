@@ -199,3 +199,66 @@ setTimeout(type,70);
 type();
 
 }
+/*==========================
+LOADER
+==========================*/
+
+window.addEventListener("load",()=>{
+
+setTimeout(()=>{
+
+loader.style.opacity="0";
+
+loader.style.visibility="hidden";
+
+},1200);
+
+});
+
+
+/*==========================
+CUSTOM CURSOR
+==========================*/
+
+const c1=document.querySelector(".cursor");
+
+const c2=document.querySelector(".cursor2");
+
+document.addEventListener("mousemove",(e)=>{
+
+c1.style.left=e.clientX+"px";
+
+c1.style.top=e.clientY+"px";
+
+c2.style.left=e.clientX-20+"px";
+
+c2.style.top=e.clientY-20+"px";
+
+});
+
+
+/*==========================
+MAGNET BUTTON
+==========================*/
+
+document.querySelectorAll(".primary,.btn-nav").forEach(btn=>{
+
+btn.addEventListener("mousemove",(e)=>{
+
+const rect=btn.getBoundingClientRect();
+
+const x=e.clientX-rect.left-rect.width/2;
+
+const y=e.clientY-rect.top-rect.height/2;
+
+btn.style.transform=`translate(${x*.15}px,${y*.15}px)`;
+
+});
+
+btn.addEventListener("mouseleave",()=>{
+
+btn.style.transform="translate(0,0)";
+
+});
+
+});

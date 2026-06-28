@@ -1912,3 +1912,145 @@ transform:translate(-220px,-180px);
 }
 
 }
+/*============================
+SCROLL PROGRESS
+=============================*/
+
+.progress-bar{
+
+position:fixed;
+
+top:0;
+
+left:0;
+
+height:4px;
+
+width:0;
+
+background:linear-gradient(90deg,#2563EB,#38BDF8,#FBBF24);
+
+z-index:999999;
+
+transition:.15s;
+
+}/*============================
+FLOATING ICONS
+=============================*/
+
+.floating-icons{
+
+position:absolute;
+
+inset:0;
+
+pointer-events:none;
+
+}
+
+.floating-icons i{
+
+position:absolute;
+
+font-size:42px;
+
+color:#38BDF822;
+
+animation:floatIcon 8s infinite ease-in-out;
+
+}
+
+.floating-icons i:nth-child(1){
+
+top:12%;
+
+left:8%;
+
+}
+
+.floating-icons i:nth-child(2){
+
+top:25%;
+
+right:12%;
+
+animation-delay:2s;
+
+}
+
+.floating-icons i:nth-child(3){
+
+bottom:18%;
+
+left:18%;
+
+animation-delay:4s;
+
+}
+
+.floating-icons i:nth-child(4){
+
+bottom:10%;
+
+right:18%;
+
+animation-delay:6s;
+
+}
+
+@keyframes floatIcon{
+
+50%{
+
+transform:translateY(-35px) rotate(15deg);
+
+}
+
+}.primary,
+.btn-nav{
+
+background-size:300%;
+
+background-image:linear-gradient(90deg,#2563EB,#38BDF8,#2563EB);
+
+animation:gradientMove 5s linear infinite;
+
+}
+
+@keyframes gradientMove{
+
+100%{
+
+background-position:300%;
+
+}
+
+}.hero-badge{
+
+display:inline-flex;
+
+align-items:center;
+
+gap:12px;
+
+padding:12px 22px;
+
+background:rgba(255,255,255,.08);
+
+border:1px solid rgba(255,255,255,.12);
+
+border-radius:40px;
+
+margin-bottom:25px;
+
+backdrop-filter:blur(20px);
+
+font-weight:700;
+
+}
+
+.hero-badge i{
+
+color:#38BDF8;
+
+}

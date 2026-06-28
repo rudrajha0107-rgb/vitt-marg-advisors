@@ -1,48 +1,201 @@
-// Mobile Menu Toggle
-const hamburger = document.querySelector('.hamburger');
-const navMenu = document.querySelector('.nav-menu');
+/* ==========================
+VITT-MARG PREMIUM JS
+========================== */
 
-if (hamburger) {
-    hamburger.addEventListener('click', () => {
-        navMenu.style.display = navMenu.style.display === 'flex' ? 'none' : 'flex';
-    });
+const navbar=document.querySelector(".navbar");
+
+window.addEventListener("scroll",()=>{
+
+if(window.scrollY>80){
+
+navbar.classList.add("active");
+
+}else{
+
+navbar.classList.remove("active");
+
 }
 
-// Active Link on Scroll
-const navLinks = document.querySelectorAll('.nav-link');
-window.addEventListener('scroll', () => {
-    let current = '';
-    const sections = document.querySelectorAll('section');
-    sections.forEach(section => {
-        const sectionTop = section.offsetTop;
-        if (pageYOffset >= sectionTop - 200) {
-            current = section.getAttribute('id');
-        }
-    });
-
-    navLinks.forEach(link => {
-        link.classList.remove('active');
-        if (link.getAttribute('href').slice(1) === current) {
-            link.classList.add('active');
-        }
-    });
 });
 
-// Form Submission
-document.getElementById('contactForm')?.addEventListener('submit', function(e) {
-    e.preventDefault();
-    alert('Thank you for your inquiry! We will contact you soon.');
-    this.reset();
+
+/*==========================
+SCROLL REVEAL
+==========================*/
+
+const observer=new IntersectionObserver((entries)=>{
+
+entries.forEach(entry=>{
+
+if(entry.isIntersecting){
+
+entry.target.classList.add("show");
+
+}
+
+})
+
+},{threshold:.15});
+
+document.querySelectorAll(".service-card,.team-card,.stat-card,.step,.test-card").forEach(el=>{
+
+el.classList.add("hidden");
+
+observer.observe(el);
+
 });
 
-// Smooth Scroll
-document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-    anchor.addEventListener('click', function (e) {
-        e.preventDefault();
-        const target = document.querySelector(this.getAttribute('href'));
-        if (target) {
-            target.scrollIntoView({ behavior: 'smooth' });
-            navMenu.style.display = 'none';
-        }
-    });
+
+/*==========================
+COUNTER
+==========================*/
+
+const counters=document.querySelectorAll(".stat-card h2");
+
+const speed=200;
+
+counters.forEach(counter=>{
+
+const update=()=>{
+
+const target=+counter.innerText.replace("+","").replace("%","");
+
+const count=+counter.getAttribute("data-count")||0;
+
+const inc=target/speed;
+
+if(count<target){
+
+counter.setAttribute("data-count",Math.ceil(count+inc));
+
+counter.innerText=Math.ceil(count+inc)+"+";
+
+setTimeout(update,10);
+
+}else{
+
+counter.innerText=target+(counter.innerText.includes("%")?"%":"+");
+
+}
+
+}
+
+update();
+
 });
+
+
+/*==========================
+BACK TO TOP
+==========================*/
+
+const topBtn=document.createElement("button");
+
+topBtn.innerHTML="↑";
+
+topBtn.className="top-btn";
+
+document.body.appendChild(topBtn);
+
+window.addEventListener("scroll",()=>{
+
+topBtn.style.display=window.scrollY>400?"flex":"none";
+
+});
+
+topBtn.onclick=()=>{
+
+window.scrollTo({
+
+top:0,
+
+behavior:"smooth"
+
+});
+
+};
+
+
+/*==========================
+MOUSE GLOW
+==========================*/
+
+const glow=document.createElement("div");
+
+glow.className="cursor-glow";
+
+document.body.appendChild(glow);
+
+document.addEventListener("mousemove",(e)=>{
+
+glow.style.left=e.clientX+"px";
+
+glow.style.top=e.clientY+"px";
+
+});
+
+
+/*==========================
+BUTTON RIPPLE
+==========================*/
+
+document.querySelectorAll(".primary,.btn-nav").forEach(btn=>{
+
+btn.addEventListener("click",function(e){
+
+let ripple=document.createElement("span");
+
+ripple.className="ripple";
+
+this.appendChild(ripple);
+
+let x=e.clientX-this.offsetLeft;
+
+let y=e.clientY-this.offsetTop;
+
+ripple.style.left=x+"px";
+
+ripple.style.top=y+"px";
+
+setTimeout(()=>{
+
+ripple.remove();
+
+},600);
+
+});
+
+});
+
+
+/*==========================
+TYPE EFFECT
+==========================*/
+
+const heading=document.querySelector(".left h4");
+
+if(heading){
+
+const txt=heading.innerText;
+
+heading.innerText="";
+
+let i=0;
+
+function type(){
+
+if(i<txt.length){
+
+heading.innerHTML+=txt.charAt(i);
+
+i++;
+
+setTimeout(type,70);
+
+}
+
+}
+
+type();
+
+}

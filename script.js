@@ -262,3 +262,47 @@ btn.style.transform="translate(0,0)";
 });
 
 });
+/*============================
+SCROLL BAR
+=============================*/
+
+window.addEventListener("scroll",()=>{
+
+const win=document.documentElement;
+
+const scrolled=(win.scrollTop)/(win.scrollHeight-win.clientHeight);
+
+document.querySelector(".progress-bar").style.width=scrolled*100+"%";
+
+});/*============================
+3D CARD EFFECT
+=============================*/
+
+document.querySelectorAll(".service-card,.team-card").forEach(card=>{
+
+card.addEventListener("mousemove",(e)=>{
+
+const rect=card.getBoundingClientRect();
+
+const x=e.clientX-rect.left;
+
+const y=e.clientY-rect.top;
+
+const rotateX=((y/rect.height)-.5)*12;
+
+const rotateY=((x/rect.width)-.5)*-12;
+
+card.style.transform=`perspective(1000px)
+rotateX(${rotateX}deg)
+rotateY(${rotateY}deg)
+translateY(-10px)`;
+
+});
+
+card.addEventListener("mouseleave",()=>{
+
+card.style.transform="perspective(1000px) rotateX(0) rotateY(0)";
+
+});
+
+});  

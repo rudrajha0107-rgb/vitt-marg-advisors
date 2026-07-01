@@ -169,26 +169,52 @@ NAVBAR
 
 .navbar{
 
-position:fixed;
-top:0;
-left:0;
-width:100%;
-z-index:1000;
-background:rgba(7,17,31,.90);
-backdrop-filter:blur(18px);
-padding:18px 0;
+.header{
+    position:fixed;
+    top:0;
+    left:0;
+    width:100%;
+    background:rgba(7,17,31,.92);
+    backdrop-filter:blur(18px);
+    z-index:1000;
 }
 
 .navbar{
+    width:100%;
+    max-width:1400px;
+    margin:0 auto;
+    padding:20px 40px;
 
-max-width:1400px;
-margin:auto;
-padding:0 60px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+}
 
-display:flex;
-justify-content:space-between;
-align-items:center;
+.logo{
+    flex:0 0 auto;
+}
 
+.nav-links{
+    display:flex;
+    list-style:none;
+    gap:35px;
+
+    margin:0;
+    padding:0;
+}
+
+.nav-links li{
+    list-style:none;
+}
+
+.nav-links a{
+    color:#fff;
+    text-decoration:none;
+    font-weight:600;
+}
+
+.btn-primary{
+    margin-left:40px;
 }
 
 .logo{

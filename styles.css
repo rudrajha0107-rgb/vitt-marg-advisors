@@ -885,3 +885,17 @@ bottom:50px;
 filter:blur(60px);
 
 }
+.leader-image{
+    width:100%;
+    height:420px;
+    overflow:hidden;
+    border-radius:20px 20px 0 0;
+}
+
+.leader-image img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:top center;
+    display:block;
+}

@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Income Tax Calculator AY 2026-27 (FY 2025-26) — Old vs New Regime | Vitt-Marg Advisors</title>
+  <meta name="description" content="Calculate your Income Tax instantly for AY 2026-27 (FY 2025-26) and compare the Old vs New Tax Regime with accurate Indian income-tax rules — latest slabs, standard deduction, Section 87A rebate, surcharge, marginal relief and 4% cess. By Vitt-Marg Advisors." />
+  <meta name="keywords" content="income tax calculator AY 2026-27, FY 2025-26, old vs new regime, 87A rebate, standard deduction, surcharge, marginal relief, India income tax" />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#07111F" />
+  <link rel="canonical" href="https://www.vittmarg.com/income-tax/" />
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Income Tax Calculator AY 2026-27 — Old vs New Regime" />
+  <meta property="og:description" content="Instantly calculate income tax and compare both regimes with accurate Indian tax rules." />
+  <meta property="og:site_name" content="Vitt-Marg Advisors" />
+  <meta name="twitter:card" content="summary_large_image" />
+
+  <link rel="icon" type="image/jpg" href="../Assets/logo.jpg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Sora:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="income-tax.css" />
+
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"WebApplication","name":"Income Tax Calculator AY 2026-27","applicationCategory":"FinanceApplication","operatingSystem":"Web","offers":{"@type":"Offer","price":"0","priceCurrency":"INR"},"provider":{"@type":"AccountingService","name":"Vitt-Marg Advisors","telephone":"+91-9315639676","areaServed":"IN"}}
+  </script>
+  <script type="application/ld+json">
+  {"@context":"https://schema.org","@type":"FAQPage","mainEntity":[
+    {"@type":"Question","name":"Is income up to Rs 12 lakh tax-free in AY 2026-27?","acceptedAnswer":{"@type":"Answer","text":"Under the new tax regime, a resident individual with taxable income up to Rs 12 lakh pays no tax due to the enhanced Section 87A rebate of Rs 60,000. For salaried individuals the Rs 75,000 standard deduction raises the effective tax-free salary to about Rs 12.75 lakh."}},
+    {"@type":"Question","name":"Which regime is better, old or new?","acceptedAnswer":{"@type":"Answer","text":"It depends on your deductions. With large 80C, 80D, HRA and home-loan claims the old regime can win; with few deductions the new regime's lower rates usually give a smaller bill. This calculator computes both."}},
+    {"@type":"Question","name":"What is the standard deduction for FY 2025-26?","acceptedAnswer":{"@type":"Answer","text":"The standard deduction for salaried individuals and pensioners is Rs 75,000 under the new regime and Rs 50,000 under the old regime."}}
+  ]}
+  </script>
+</head>
+
+<body>
+<div class="vmtax-root">
+  <!-- animated background -->
+  <div class="vmtax-atmosphere" aria-hidden="true">
+    <div class="vmtax-aurora vmtax-aurora--1"></div>
+    <div class="vmtax-aurora vmtax-aurora--2"></div>
+    <div class="vmtax-aurora vmtax-aurora--3"></div>
+    <div class="vmtax-grid-bg"></div>
+  </div>
+
+  <div class="vmtax-shell">
+    <!-- top bar -->
+    <header class="vmtax-nav">
+      <div class="vmtax-container vmtax-nav__inner">
+        <a href="../index.html" class="vmtax-brand">
+          <span class="vmtax-brand__badge">व</span>
+          <span class="vmtax-brand__text"><strong>Vitt-Marg</strong><em>Advisors</em></span>
+        </a>
+        <a href="../index.html" class="vmtax-nav__back">
+          <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M19 12H7l4 4-1.4 1.4L3 12l6.6-5.4L11 8l-4 4h12z"/></svg>
+          Back to site
+        </a>
+      </div>
+    </header>
+
+    <div class="vmtax-container">
+      <!-- hero -->
+      <section class="vmtax-hero">
+        <span class="vmtax-eyebrow">Income Tax Calculator</span>
+        <h1>Income Tax <span class="vmtax-grad">Calculator</span></h1>
+        <div class="vmtax-hero__sub">Assessment Year 2026-27 · Financial Year 2025-26</div>
+        <p>Calculate your income tax instantly and compare the Old vs New Tax Regime with accurate
+          Indian income-tax rules — latest slabs, rebate, surcharge, marginal relief and cess.</p>
+      </section>
+
+      <!-- calculator -->
+      <section class="vmtax-layout">
+        <!-- INPUTS -->
+        <div class="vmtax-panel">
+          <h2 class="vmtax-panel__title">Your income &amp; deductions</h2>
+          <p class="vmtax-panel__sub">Enter annual figures in rupees. Everything calculates instantly.</p>
+
+          <div class="vmtax-divider">Income</div>
+          <div class="vmtax-grid2">
+            <div class="vmtax-field">
+              <label class="vmtax-label" for="vmtaxSalary">Gross Salary</label>
+              <div class="vmtax-inwrap vmtax-has-prefix"><span class="vmtax-prefix">₹</span>
+                <input class="vmtax-input" id="vmtaxSalary" inputmode="numeric" placeholder="12,00,000" value="12,00,000" /></div>
+            </div>
+            <div class="vmtax-field">
+              <label class="vmtax-label" for="vmtaxHouse">House Property Income</label>
+              <div class="vmtax-inwrap vmtax-has-prefix"><span class="vmtax-prefix">₹</span>
+                <input class="vmtax-input" id="vmtaxHouse" inputmode="numeric" placeholder="0" value="0" /></div>
+            </div>
+            <div class="vmtax-field">
+              <label class="vmtax-label" for="vmtaxBusiness">Business / Profession Income</label>
+              <div class="vmtax-inwrap vmtax-has-prefix"><span class="vmtax-prefix">₹</span>
+                <input class="vmtax-input" id="vmtaxBusiness" inputmode="numeric" placeholder="0" value="0" /></div>
+            </div>
+            <div class="vmtax-field">
+              <label class="vmtax-label" for="vmtaxCapital">Capital Gains <span class="vmtax-hint">taxed separately*</span></label>
+              <div class="vmtax-inwrap vmtax-has-prefix"><span class="vmtax-prefix">₹</span>
+                <input class="vmtax-input" id="vmtaxCapital" inputmode="numeric" placeholder="0" value="0" /></div>
+            </div>
+            <div class="vmtax-field vmtax-field--full">
+              <label class="vmtax-label" for="vmtaxOther">Other Income <span class="vmtax-hint">interest, dividends, etc.</span></label>
+              <div class="vmtax-inwrap vmtax-has-prefix"><span class="vmtax-prefix">₹</span>
+                <input class="vmtax-input" id="vmtaxOther" inputmode="numeric" placeholder="0" value="0" /></div>
+            </div>
+          </div>
+
+          <div class="vmtax-divider">Deductions &amp; exemptions <span class="vmtax-hint" style="text-transform:none;letter-spacing:0;color:var(--vmtax-faint)">(old regime only)</span></div>
+          <div class="vmtax-grid2">
+            <div class="vmtax-field">
+              <label class="vmtax-label" for="vmtax80C">80C <span class="vmtax-hint">max ₹1.5L</span></label>
+              <div class="vmtax-inwrap vmtax-has-prefix"><span class="vmtax-prefix">₹</span>
+                <input class="vmtax-input" id="vmtax80C" inputmode="numeric" placeholder="0" value="1,50,000" /></div>
+            </div>
+            <div class="vmtax-field">
+              <label class="vmtax-label" for="vmtax80CCD">80CCD(1B) NPS <span class="vmtax-hint">max ₹50K</span></label>
+              <div class="vmtax-inwrap vmtax-has-prefix"><span class="vmtax-prefix">₹</span>
+                <input class="vmtax-input" id="vmtax80CCD" inputmode="numeric" placeholder="0" value="0" /></div>
+            </div>
+            <div class="vmtax-field">
+              <label class="vmtax-label" for="vmtax80D">80D Health Insurance</label>
+              <div class="vmtax-inwrap vmtax-has-prefix"><span class="vmtax-prefix">₹</span>
+                <input class="vmtax-input" id="vmtax80D" inputmode="numeric" placeholder="0" value="0" /></div>
+            </div>
+            <div class="vmtax-field">
+              <label class="vmtax-label" for="vmtaxLoan">Home Loan Interest <span class="vmtax-hint">24b, max ₹2L</span></label>
+              <div class="vmtax-inwrap vmtax-has-prefix"><span class="vmtax-prefix">₹</span>
+                <input class="vmtax-input" id="vmtaxLoan" inputmode="numeric" placeholder="0" value="0" /></div>
+            </div>
+            <div class="vmtax-field">
+              <label class="vmtax-label" for="vmtaxHRA">HRA Exemption</label>
+              <div class="vmtax-inwrap vmtax-has-prefix"><span class="vmtax-prefix">₹</span>
+                <input class="vmtax-input" id="vmtaxHRA" inputmode="numeric" placeholder="0" value="0" /></div>
+            </div>
+            <div class="vmtax-field">
+              <label class="vmtax-label" for="vmtaxPtax">Professional Tax</label>
+              <div class="vmtax-inwrap vmtax-has-prefix"><span class="vmtax-prefix">₹</span>
+                <input class="vmtax-input" id="vmtaxPtax" inputmode="numeric" placeholder="0" value="2,500" /></div>
+            </div>
+          </div>
+
+          <div class="vmtax-divider">Profile</div>
+          <div class="vmtax-field">
+            <label class="vmtax-label">Standard Deduction
+              <span class="vmtax-hint">auto: ₹75K new / ₹50K old</span>
+            </label>
+            <div class="vmtax-pills" id="vmtaxSalariedPills">
+              <input type="radio" name="vmtaxSalaried" id="vmtaxSal1" value="yes" checked><label for="vmtaxSal1">Salaried / Pensioner</label>
+              <input type="radio" name="vmtaxSalaried" id="vmtaxSal2" value="no"><label for="vmtaxSal2">Non-salaried</label>
+            </div>
+          </div>
+
+          <div class="vmtax-field">
+            <label class="vmtax-label">Age</label>
+            <div class="vmtax-pills" id="vmtaxAgePills">
+              <input type="radio" name="vmtaxAge" id="vmtaxAge1" value="below60" checked><label for="vmtaxAge1">Below 60</label>
+              <input type="radio" name="vmtaxAge" id="vmtaxAge2" value="senior"><label for="vmtaxAge2">60 – 80</label>
+              <input type="radio" name="vmtaxAge" id="vmtaxAge3" value="super"><label for="vmtaxAge3">80+</label>
+            </div>
+          </div>
+
+          <div class="vmtax-field">
+            <label class="vmtax-label">Preferred Regime <span class="vmtax-hint">we compare both anyway</span></label>
+            <div class="vmtax-regime" id="vmtaxRegime">
+              <input type="radio" name="vmtaxRegime" id="vmtaxRegNew" value="new" checked>
+              <label for="vmtaxRegNew"><strong>New Regime</strong><span>Lower rates, few deductions (default)</span></label>
+              <input type="radio" name="vmtaxRegime" id="vmtaxRegOld" value="old">
+              <label for="vmtaxRegOld"><strong>Old Regime</strong><span>Higher rates, full deductions</span></label>
+            </div>
+          </div>
+
+          <div class="vmtax-actions">
+            <button class="vmtax-btn vmtax-btn--primary" id="vmtaxBtnCalc" type="button"><span>Calculate Tax</span></button>
+            <button class="vmtax-btn vmtax-btn--gold" id="vmtaxBtnCompare" type="button"><span>Compare Regimes</span></button>
+            <button class="vmtax-btn vmtax-btn--ghost" id="vmtaxBtnReset" type="button"><span>Reset</span></button>
+            <button class="vmtax-btn vmtax-btn--ghost" id="vmtaxBtnPdf" type="button"><span>Download PDF</span></button>
+          </div>
+        </div>
+
+        <!-- RESULTS -->
+        <div class="vmtax-panel vmtax-sticky" id="vmtaxResultPanel">
+          <div class="vmtax-reshero">
+            <span class="vmtax-reshero__pill" id="vmtaxRegimePill">Recommended</span>
+            <div class="vmtax-reshero__label">Total tax payable</div>
+            <div class="vmtax-reshero__value" id="vmtaxTotalTax">₹0</div>
+            <div class="vmtax-reshero__sub" id="vmtaxTotalSub">Enter your details and calculate</div>
+          </div>
+
+          <div class="vmtax-rows" id="vmtaxBreakdown">
+            <div class="vmtax-placeholder">
+              <svg viewBox="0 0 24 24" width="46" height="46"><path fill="currentColor" d="M4 3h16v18l-4-2-4 2-4-2-4 2zm3 5h10V6H7zm0 4h10v-2H7zm0 4h7v-2H7z"/></svg>
+              <h3>Your tax breakdown appears here</h3>
+              <p style="color:var(--vmtax-mut);font-size:.88rem">Fill in your income and press Calculate Tax.</p>
+            </div>
+          </div>
+
+          <div class="vmtax-note" id="vmtaxNote" style="display:none">
+            <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 15h-2v-6h2zm0-8h-2V7h2z"/></svg>
+            <span>*Capital gains are taxed at special rates and shown separately from slab income. The Section 87A rebate does not apply to special-rate income. Figures are indicative for planning.</span>
+          </div>
+        </div>
+      </section>
+
+      <!-- COMPARISON -->
+      <section id="vmtaxCompareSection" style="display:none">
+        <div class="vmtax-section-head">
+          <h2>Old Regime vs <span class="vmtax-grad">New Regime</span></h2>
+          <p>Here's how the two systems stack up for your numbers. The lower total tax wins.</p>
+        </div>
+
+        <div class="vmtax-bars" id="vmtaxBars"></div>
+
+        <div class="vmtax-compare" id="vmtaxCompareCards"></div>
+
+        <div class="vmtax-verdict" id="vmtaxVerdict"></div>
+      </section>
+
+      <!-- TAX SAVING SUGGESTIONS -->
+      <section id="vmtaxTipsSection" style="display:none">
+        <div class="vmtax-section-head">
+          <h2>Tax Saving <span class="vmtax-grad">Suggestions</span></h2>
+          <p>Personalised ideas to legally reduce your tax under the old regime.</p>
+        </div>
+        <div class="vmtax-tips" id="vmtaxTips"></div>
+        <div class="vmtax-tip__potential" id="vmtaxPotential"></div>
+      </section>
+
+      <!-- CONTENT -->
+      <section class="vmtax-content">
+        <div class="vmtax-block vmtax-reveal">
+          <h2>New Regime <span class="vmtax-grad">Slabs</span> · AY 2026-27</h2>
+          <div class="vmtax-ratewrap">
+            <table class="vmtax-ratetable">
+              <thead><tr><th>Taxable income</th><th>Rate</th></tr></thead>
+              <tbody>
+                <tr><td>Up to ₹4,00,000</td><td>Nil</td></tr>
+                <tr><td>₹4,00,001 – ₹8,00,000</td><td>5%</td></tr>
+                <tr><td>₹8,00,001 – ₹12,00,000</td><td>10%</td></tr>
+                <tr><td>₹12,00,001 – ₹16,00,000</td><td>15%</td></tr>
+                <tr><td>₹16,00,001 – ₹20,00,000</td><td>20%</td></tr>
+                <tr><td>₹20,00,001 – ₹24,00,000</td><td>25%</td></tr>
+                <tr><td>Above ₹24,00,000</td><td>30%</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p style="margin-top:1rem">Standard deduction ₹75,000 (salaried). Section 87A rebate up to ₹60,000 makes taxable income up to ₹12,00,000 tax-free. Surcharge capped at 25%. 4% health &amp; education cess.</p>
+        </div>
+
+        <div class="vmtax-block vmtax-reveal">
+          <h2>Old Regime <span class="vmtax-grad">Slabs</span> · AY 2026-27</h2>
+          <div class="vmtax-ratewrap">
+            <table class="vmtax-ratetable">
+              <thead><tr><th>Taxable income (below 60)</th><th>Rate</th></tr></thead>
+              <tbody>
+                <tr><td>Up to ₹2,50,000</td><td>Nil</td></tr>
+                <tr><td>₹2,50,001 – ₹5,00,000</td><td>5%</td></tr>
+                <tr><td>₹5,00,001 – ₹10,00,000</td><td>20%</td></tr>
+                <tr><td>Above ₹10,00,000</td><td>30%</td></tr>
+              </tbody>
+            </table>
+          </div>
+          <p style="margin-top:1rem">Basic exemption ₹3,00,000 (senior 60–80) or ₹5,00,000 (super-senior 80+). Standard deduction ₹50,000 (salaried). Section 87A rebate up to ₹12,500 (income up to ₹5,00,000). Full deductions available. Surcharge up to 37%. 4% cess.</p>
+        </div>
+
+        <div class="vmtax-block vmtax-reveal">
+          <h2>Frequently asked <span class="vmtax-grad">questions</span></h2>
+          <div class="vmtax-faq">
+            <div class="vmtax-faqitem"><button class="vmtax-faqq" type="button" aria-expanded="false"><span>Is income up to ₹12 lakh really tax-free?</span><i class="vmtax-faqic"></i></button><div class="vmtax-faqa"><p>Yes — under the new regime a resident individual with taxable income up to ₹12 lakh pays no tax thanks to the enhanced ₹60,000 Section 87A rebate. For salaried people the ₹75,000 standard deduction lifts the effective tax-free salary to about ₹12.75 lakh. The rebate does not apply to special-rate income like capital gains.</p></div></div>
+            <div class="vmtax-faqitem"><button class="vmtax-faqq" type="button" aria-expanded="false"><span>Which regime should I choose?</span><i class="vmtax-faqic"></i></button><div class="vmtax-faqa"><p>It depends on your deductions. If you claim substantial 80C, 80D, HRA and home-loan interest, the old regime can win. With few deductions the new regime's lower rates usually cost less. This tool computes both and highlights the winner.</p></div></div>
+            <div class="vmtax-faqitem"><button class="vmtax-faqq" type="button" aria-expanded="false"><span>What is marginal relief on surcharge?</span><i class="vmtax-faqic"></i></button><div class="vmtax-faqa"><p>When income just crosses a surcharge threshold (₹50 lakh, ₹1 crore and so on), marginal relief ensures the extra tax plus surcharge never exceeds the extra income above that threshold. This calculator applies it automatically.</p></div></div>
+            <div class="vmtax-faqitem"><button class="vmtax-faqq" type="button" aria-expanded="false"><span>Does the new regime allow deductions?</span><i class="vmtax-faqic"></i></button><div class="vmtax-faqa"><p>Very few — the ₹75,000 standard deduction for salaried individuals and the employer's NPS contribution under 80CCD(2). Most others including 80C, 80D and HRA are not available under the new regime.</p></div></div>
+          </div>
+        </div>
+
+        <!-- cta -->
+        <div class="vmtax-cta vmtax-reveal">
+          <h2>Want a CA to optimise your tax?</h2>
+          <p>Tax planning is more than a slab table. Book a free consultation and we'll fine-tune your
+            regime choice, deductions and advance-tax schedule.</p>
+          <div class="vmtax-cta__actions">
+            <a href="../index.html#contact" class="vmtax-btn vmtax-btn--primary"><span>Book Free Consultation</span></a>
+            <a href="tel:+919315639676" class="vmtax-btn vmtax-btn--ghost"><span>Call 9315639676</span></a>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <!-- footer -->
+    <footer class="vmtax-footer">
+      <div class="vmtax-container vmtax-footer__inner">
+        <p>© <span id="vmtaxYear">2026</span> Vitt-Marg Advisors · Chartered Accountants · Noida, Delhi NCR</p>
+        <div class="vmtax-footer__links">
+          <a href="../index.html">Home</a>
+          <a href="../index.html#services">Services</a>
+          <a href="../index.html#contact">Contact</a>
+        </div>
+      </div>
+    </footer>
+  </div>
+</div>
+
+  <!-- jsPDF (optional; graceful fallback to print if unavailable) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+  <script src="income-tax.js"></script>
+</body>
+</html>

@@ -2607,3 +2607,47 @@ body.page-svc a, body.page-svc button, body.page-svc summary { cursor: pointer; 
   .svc-layout { grid-template-columns: 1fr; }
   .svc-aside { position: static; }
 }
+
+/* =================================================================
+   30. NAVBAR FIT FIX — APPENDED
+   Stops the logo text overlapping the menu and links wrapping onto
+   several lines on laptop screens. Burger menu now starts at 1100px.
+   ================================================================= */
+.nav .container { max-width: 1360px; }
+.nav__brand { flex-shrink: 0; }
+.nav__link { white-space: nowrap; }
+.nav__actions { flex-shrink: 0; }
+.nav__phone { white-space: nowrap; }
+@media (min-width: 1101px) {
+  .nav__menu { gap: .1rem; }
+  .nav__link { padding: .55rem .7rem; }
+  .nav__link::after { left: .7rem; right: .7rem; }
+}
+@media (min-width: 1101px) and (max-width: 1360px) {
+  .nav__inner { gap: 1rem; }
+  .nav__link { font-size: .88rem; padding: .5rem .55rem; }
+  .nav__link::after { left: .55rem; right: .55rem; }
+  .nav__phone span { display: none; }
+}
+@media (max-width: 1100px) {
+  .nav__menu {
+    position: fixed;
+    inset: 0 0 0 auto;
+    width: min(320px, 82vw);
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: .4rem;
+    padding: 6rem 1.6rem 2rem;
+    background: rgba(255,255,255,.98);
+    backdrop-filter: blur(20px);
+    border-left: 1px solid var(--stroke-2);
+    transform: translateX(105%);
+    transition: transform .45s var(--ease);
+    box-shadow: -20px 0 60px rgba(15,40,90,.15);
+  }
+  .nav__menu.is-open { transform: translateX(0); }
+  .nav__menu .nav__link { width: 100%; font-size: 1.05rem; padding: .8rem 1rem; }
+  .nav__menu .nav__link::after { left: 1rem; right: auto; width: 20px; }
+  .nav__burger { display: flex; }
+}

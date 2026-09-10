@@ -1,11 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://vittmarg.com/</loc>
-    <lastmod>2026-09-10</lastmod>
-  </url>
-  <url>
-    <loc>https://vittmarg.com/income-tax/</loc>
-    <lastmod>2026-09-10</lastmod>
-  </url>
+  <url><loc>https://vittmarg.com/</loc><lastmod>2026-09-10</lastmod></url>
+  <url><loc>https://vittmarg.com/gst-registration-noida/</loc><lastmod>2026-09-10</lastmod></url>
+  <url><loc>https://vittmarg.com/itr-filing-noida/</loc><lastmod>2026-09-10</lastmod></url>
+  <url><loc>https://vittmarg.com/company-registration-noida/</loc><lastmod>2026-09-10</lastmod></url>
+  <url><loc>https://vittmarg.com/roc-compliance-noida/</loc><lastmod>2026-09-10</lastmod></url>
+  <url><loc>https://vittmarg.com/income-tax/</loc><lastmod>2026-09-10</lastmod></url>
 </urlset>

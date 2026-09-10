@@ -2546,3 +2546,64 @@ p { color: var(--text-soft); }
   #tax-calculator *, #tax-calculator *::before, #tax-calculator *::after { animation-duration: .001ms !important; transition-duration: .001ms !important; }
   .tax-reveal { opacity: 1 !important; transform: none !important; }
 }
+
+/* =================================================================
+   29. SERVICE PAGES (/gst-registration-noida/ etc.) — APPENDED
+   Used only on pages with <body class="page-svc">. Nothing above
+   this line is affected.
+   ================================================================= */
+body.page-svc { cursor: auto; }
+body.page-svc a, body.page-svc button, body.page-svc summary { cursor: pointer; }
+.svc-hero { padding: clamp(8rem, 14vw, 10.5rem) 0 clamp(2.5rem, 5vw, 3.5rem); }
+.crumbs { display: flex; flex-wrap: wrap; gap: .45rem; font-size: .84rem; color: var(--text-mut); margin-bottom: 1.4rem; }
+.crumbs a { color: var(--primary); }
+.crumbs a:hover { text-decoration: underline; }
+.svc-hero h1 { font-size: clamp(2.2rem, 5.2vw, 3.6rem); line-height: 1.08; margin: 1.1rem 0 1.2rem; max-width: 18ch; }
+.svc-hero__lede { font-size: clamp(1.02rem, 1.5vw, 1.2rem); color: var(--text-soft); line-height: 1.7; max-width: 62ch; }
+.svc-hero__actions { display: flex; flex-wrap: wrap; gap: .8rem; margin-top: 2rem; }
+.svc-meta { margin-top: 1.4rem; font-size: .82rem; color: var(--text-mut); }
+
+.svc-layout { display: grid; grid-template-columns: minmax(0, 1fr) 320px; gap: clamp(2rem, 5vw, 4rem); align-items: start; padding-bottom: clamp(3rem, 7vw, 5rem); }
+.prose { max-width: 72ch; color: var(--text-soft); font-size: 1.02rem; line-height: 1.78; }
+.prose h2 { font-size: clamp(1.5rem, 2.6vw, 2rem); color: var(--text); margin: 2.8rem 0 1rem; line-height: 1.2; }
+.prose h2:first-child { margin-top: 0; }
+.prose h3 { font-size: 1.15rem; color: var(--text); margin: 1.8rem 0 .6rem; }
+.prose p { margin: 0 0 1.05rem; }
+.prose a { color: var(--primary); text-decoration: underline; text-underline-offset: 3px; }
+.prose strong { color: var(--text); font-weight: 600; }
+.prose ul, .prose ol { margin: 0 0 1.2rem 1.25rem; }
+.prose ul { list-style: disc; }
+.prose ol { list-style: decimal; }
+.prose li { margin-bottom: .5rem; padding-left: .2rem; }
+.prose li::marker { color: var(--primary); }
+.prose .note { background: var(--bg-2); border: 1px solid var(--stroke); border-left: 3px solid var(--primary); border-radius: var(--r-sm); padding: 1rem 1.2rem; margin: 1.4rem 0; font-size: .95rem; }
+.prose table { width: 100%; border-collapse: collapse; margin: .4rem 0 1.4rem; font-size: .94rem; }
+.prose th, .prose td { text-align: left; padding: .7rem .8rem; border-bottom: 1px solid var(--stroke); vertical-align: top; }
+.prose th { color: var(--text); font-weight: 600; background: var(--bg-2); }
+.prose .table-wrap { overflow-x: auto; }
+
+.svc-aside { position: sticky; top: 110px; display: flex; flex-direction: column; gap: 1rem; }
+.svc-card-box { background: var(--glass); border: 1px solid var(--stroke-2); border-radius: var(--r-lg); padding: 1.5rem; box-shadow: var(--sh-md); }
+.svc-card-box h3 { font-size: 1.15rem; margin-bottom: .5rem; }
+.svc-card-box p { font-size: .9rem; color: var(--text-soft); margin-bottom: 1.1rem; line-height: 1.6; }
+.svc-card-box .btn { width: 100%; justify-content: center; margin-bottom: .6rem; }
+.svc-card-box address { font-style: normal; font-size: .86rem; color: var(--text-mut); line-height: 1.6; margin-top: .4rem; }
+.svc-card-box address a { color: var(--primary); }
+.svc-related a { display: block; padding: .6rem 0; border-bottom: 1px solid var(--stroke); color: var(--text); font-size: .93rem; }
+.svc-related a:last-child { border-bottom: 0; }
+.svc-related a:hover { color: var(--primary); }
+
+.svc-faq { margin-top: 1rem; }
+.svc-faq details { border: 1px solid var(--stroke-2); border-radius: var(--r-md); background: var(--glass); margin-bottom: .7rem; }
+.svc-faq summary { list-style: none; padding: 1rem 1.2rem; font-weight: 600; color: var(--text); display: flex; justify-content: space-between; gap: 1rem; }
+.svc-faq summary::-webkit-details-marker { display: none; }
+.svc-faq summary::after { content: "+"; color: var(--primary); font-size: 1.3rem; line-height: 1; }
+.svc-faq details[open] summary::after { content: "–"; }
+.svc-faq details > div { padding: 0 1.2rem 1.1rem; }
+.svc-faq details > div p:last-child { margin-bottom: 0; }
+.svc-disclaimer { font-size: .8rem; color: var(--text-mut); margin-top: 2.2rem; }
+
+@media (max-width: 960px) {
+  .svc-layout { grid-template-columns: 1fr; }
+  .svc-aside { position: static; }
+}

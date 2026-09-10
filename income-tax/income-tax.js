@@ -305,7 +305,7 @@
     }
     // always give something
     if (!tips.length) {
-      tips.push({ icon: 'M9 16.2l-3.5-3.5L4 14.2 9 19l11-11-1.5-1.5z', h: "You're well optimised", p: 'Your major deductions are maxed out. Speak to a CA about advanced planning like HUF, capital-gains harvesting or business structuring.', save: 0 });
+      tips.push({ icon: 'M9 16.2l-3.5-3.5L4 14.2 9 19l11-11-1.5-1.5z', h: "You're well optimised", p: 'Your major deductions are maxed out. Speak to our team about advanced planning like HUF, capital-gains harvesting or business structuring.', save: 0 });
     }
     tips = tips.slice(0, 6);
 
@@ -391,7 +391,7 @@
     doc.setTextColor(255, 255, 255); doc.setFont('helvetica', 'bold'); doc.setFontSize(20);
     doc.text('Vitt-Marg Advisors', M, 44);
     doc.setFont('helvetica', 'normal'); doc.setFontSize(10); doc.setTextColor(120, 190, 245);
-    doc.text('Chartered Accountants  |  Income Tax Calculator', M, 62);
+    doc.text('CMA-led Tax & Compliance Advisory  |  Income Tax Calculator', M, 62);
     doc.setTextColor(180, 190, 210);
     doc.text('AY 2026-27 (FY 2025-26)  |  +91 93156 39676', M, 77);
     y = 122;

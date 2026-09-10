@@ -9,31 +9,31 @@
 
 /* ---- scoped design tokens (namespaced) ---- */
 .vmtax-root {
-  --vmtax-bg:        #07111F;
-  --vmtax-bg-2:      #0A1626;
-  --vmtax-bg-3:      #0D1B30;
+  --vmtax-bg:        #FFFFFF;
+  --vmtax-bg-2:      #F3F7FE;
+  --vmtax-bg-3:      #E7EFFD;
   --vmtax-primary:   #2563EB;
   --vmtax-primary-d: #1D4ED8;
-  --vmtax-accent:    #38BDF8;
-  --vmtax-accent-2:  #7DD3FC;
-  --vmtax-gold:      #FBBF24;
-  --vmtax-gold-2:    #FCD34D;
-  --vmtax-green:     #4ADE80;
-  --vmtax-text:      #F5F8FF;
-  --vmtax-soft:      #B9C4D8;
-  --vmtax-mut:       #7C8AA5;
-  --vmtax-faint:     #4E5C77;
-  --vmtax-glass:     rgba(255,255,255,0.035);
-  --vmtax-glass-2:   rgba(255,255,255,0.06);
-  --vmtax-stroke:    rgba(255,255,255,0.08);
-  --vmtax-stroke-2:  rgba(255,255,255,0.14);
-  --vmtax-grad:      linear-gradient(135deg, #38BDF8 0%, #2563EB 55%, #6366F1 100%);
-  --vmtax-grad-gold: linear-gradient(135deg, #FCD34D, #FBBF24);
-  --vmtax-grad-text: linear-gradient(120deg, #7DD3FC 0%, #38BDF8 30%, #2563EB 70%, #818CF8 100%);
-  --vmtax-grad-line: linear-gradient(90deg, transparent, #38BDF8, transparent);
-  --vmtax-sh-md:     0 12px 40px rgba(0,0,0,.45);
-  --vmtax-sh-lg:     0 30px 80px rgba(0,0,0,.55);
-  --vmtax-sh-glow:   0 0 0 1px rgba(255,255,255,.08), 0 20px 60px -20px rgba(37,99,235,.5);
+  --vmtax-accent:    #0369A1;
+  --vmtax-accent-2:  #60A5FA;
+  --vmtax-gold:      #1D4ED8;
+  --vmtax-gold-2:    #1D4ED8;
+  --vmtax-green:     #15803D;
+  --vmtax-text:      #0B1F44;
+  --vmtax-soft:      #33476B;
+  --vmtax-mut:       #556684;
+  --vmtax-faint:     #64748B;
+  --vmtax-glass:     #FFFFFF;
+  --vmtax-glass-2:   #F5F8FF;
+  --vmtax-stroke:    rgba(30,64,175,0.12);
+  --vmtax-stroke-2:  rgba(30,64,175,0.20);
+  --vmtax-grad:      linear-gradient(135deg, #2563EB 0%, #1D4ED8 55%, #1E3A8A 100%);
+  --vmtax-grad-gold: linear-gradient(135deg, #3B82F6, #1D4ED8);
+  --vmtax-grad-text: linear-gradient(120deg, #1E3A8A 0%, #1D4ED8 40%, #2563EB 70%, #0369A1 100%);
+  --vmtax-grad-line: linear-gradient(90deg, transparent, #2563EB, transparent);
+  --vmtax-sh-md:     0 12px 40px rgba(15,40,90,.10);
+  --vmtax-sh-lg:     0 30px 80px rgba(15,40,90,.14);
+  --vmtax-sh-glow:   0 0 0 1px rgba(30,64,175,.12), 0 20px 60px -20px rgba(37,99,235,.35);
   --vmtax-r-sm: 12px; --vmtax-r-md: 18px; --vmtax-r-lg: 26px; --vmtax-r-xl: 34px; --vmtax-r-pill: 999px;
   --vmtax-font-display: 'Fraunces', Georgia, serif;
   --vmtax-font-body:    'Sora', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
@@ -64,7 +64,7 @@
 .vmtax-root ul, .vmtax-root ol { list-style: none; }
 .vmtax-root button { font-family: inherit; cursor: pointer; border: none; background: none; color: inherit; }
 .vmtax-root input, .vmtax-root select { font-family: inherit; }
-.vmtax-root ::selection { background: rgba(56,189,248,.3); color: #fff; }
+.vmtax-root ::selection { background: rgba(37,99,235,.18); color: #0B1F44; }
 
 /* scrollbar (scoped best-effort) */
 .vmtax-root ::-webkit-scrollbar { width: 10px; height: 10px; }
@@ -73,15 +73,15 @@
 
 /* ---- animated background ---- */
 .vmtax-atmosphere { position: fixed; inset: 0; z-index: 0; overflow: hidden; pointer-events: none; }
-.vmtax-aurora { position: absolute; border-radius: 50%; filter: blur(90px); opacity: .42; mix-blend-mode: screen; animation: vmtaxFloat 16s ease-in-out infinite; }
-.vmtax-aurora--1 { top: -12%; left: -8%; width: 44vw; height: 44vw; background: radial-gradient(circle, rgba(37,99,235,.55), transparent 65%); }
-.vmtax-aurora--2 { top: 28%; right: -14%; width: 40vw; height: 40vw; background: radial-gradient(circle, rgba(56,189,248,.42), transparent 65%); animation-delay: -6s; }
-.vmtax-aurora--3 { bottom: -18%; left: 26%; width: 46vw; height: 46vw; background: radial-gradient(circle, rgba(99,102,241,.4), transparent 65%); animation-delay: -11s; }
+.vmtax-aurora { position: absolute; border-radius: 50%; filter: blur(90px); opacity: .35; mix-blend-mode: multiply; animation: vmtaxFloat 16s ease-in-out infinite; }
+.vmtax-aurora--1 { top: -12%; left: -8%; width: 44vw; height: 44vw; background: radial-gradient(circle, rgba(37,99,235,.22), transparent 65%); }
+.vmtax-aurora--2 { top: 28%; right: -14%; width: 40vw; height: 40vw; background: radial-gradient(circle, rgba(59,130,246,.18), transparent 65%); animation-delay: -6s; }
+.vmtax-aurora--3 { bottom: -18%; left: 26%; width: 46vw; height: 46vw; background: radial-gradient(circle, rgba(30,64,175,.14), transparent 65%); animation-delay: -11s; }
 .vmtax-grid-bg {
   position: absolute; inset: 0;
   background-image:
-    linear-gradient(rgba(255,255,255,.022) 1px, transparent 1px),
-    linear-gradient(90deg, rgba(255,255,255,.022) 1px, transparent 1px);
+    linear-gradient(rgba(30,64,175,.05) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(30,64,175,.05) 1px, transparent 1px);
   background-size: 62px 62px;
   -webkit-mask-image: radial-gradient(ellipse 78% 55% at 50% 30%, #000 30%, transparent 75%);
           mask-image: radial-gradient(ellipse 78% 55% at 50% 30%, #000 30%, transparent 75%);
@@ -100,7 +100,7 @@
 .vmtax-nav {
   position: sticky; top: 0; z-index: 50;
   padding-block: .9rem;
-  background: rgba(7,17,31,.72);
+  background: rgba(255,255,255,.88);
   -webkit-backdrop-filter: blur(18px) saturate(140%);
           backdrop-filter: blur(18px) saturate(140%);
   border-bottom: 1px solid var(--vmtax-stroke);
@@ -124,7 +124,7 @@
   padding: .58rem 1.05rem; border: 1px solid var(--vmtax-stroke-2); border-radius: var(--vmtax-r-pill);
   background: var(--vmtax-glass); transition: color .3s, border-color .3s, transform .3s var(--vmtax-ease);
 }
-.vmtax-nav__back:hover { color: #fff; border-color: var(--vmtax-accent); transform: translateX(-3px); }
+.vmtax-nav__back:hover { color: var(--vmtax-primary-d); border-color: var(--vmtax-accent); transform: translateX(-3px); }
 
 /* ---- hero / heading ---- */
 .vmtax-hero { text-align: center; padding: clamp(2.6rem, 6vw, 4.4rem) 0 clamp(1.4rem, 3vw, 2rem); }
@@ -218,7 +218,7 @@
 .vmtax-regime label strong { font-size: .95rem; font-weight: 600; }
 .vmtax-regime label span { font-size: .74rem; color: var(--vmtax-mut); }
 .vmtax-regime input:checked + label { border-color: var(--vmtax-accent); background: linear-gradient(160deg, rgba(37,99,235,.16), rgba(56,189,248,.05)); }
-.vmtax-regime input:checked + label strong { color: var(--vmtax-accent-2); }
+.vmtax-regime input:checked + label strong { color: var(--vmtax-primary-d); }
 
 /* ---- buttons ---- */
 .vmtax-btn {
@@ -230,8 +230,8 @@
 .vmtax-btn > span { position: relative; z-index: 2; }
 .vmtax-btn--primary { color: #fff; background: var(--vmtax-grad); background-size: 180% 180%; box-shadow: 0 12px 40px -12px rgba(37,99,235,.7), inset 0 1px 0 rgba(255,255,255,.25); }
 .vmtax-btn--primary:hover { transform: translateY(-3px); box-shadow: 0 22px 55px -12px rgba(37,99,235,.85); }
-.vmtax-btn--gold { color: #1a1205; background: var(--vmtax-grad-gold); box-shadow: 0 12px 40px -14px rgba(251,191,36,.7); }
-.vmtax-btn--gold:hover { transform: translateY(-3px); box-shadow: 0 20px 52px -14px rgba(251,191,36,.85); }
+.vmtax-btn--gold { color: #fff; background: var(--vmtax-grad-gold); box-shadow: 0 12px 40px -14px rgba(37,99,235,.55); }
+.vmtax-btn--gold:hover { transform: translateY(-3px); box-shadow: 0 20px 52px -14px rgba(37,99,235,.7); }
 .vmtax-btn--ghost { color: var(--vmtax-text); background: var(--vmtax-glass); border: 1px solid var(--vmtax-stroke-2); }
 .vmtax-btn--ghost::before { content: ""; position: absolute; inset: 0; background: var(--vmtax-grad); opacity: 0; transition: opacity .35s; z-index: -1; }
 .vmtax-btn--ghost:hover { transform: translateY(-3px); border-color: transparent; color: #fff; }
@@ -251,8 +251,8 @@
 }
 .vmtax-reshero__pill {
   display: inline-block; font-family: var(--vmtax-font-mono); font-size: .66rem; letter-spacing: .1em; text-transform: uppercase;
-  color: var(--vmtax-gold); padding: .3rem .8rem; border: 1px solid rgba(251,191,36,.28); border-radius: var(--vmtax-r-pill);
-  background: rgba(251,191,36,.07); margin-bottom: .8rem;
+  color: var(--vmtax-gold); padding: .3rem .8rem; border: 1px solid rgba(37,99,235,.28); border-radius: var(--vmtax-r-pill);
+  background: rgba(37,99,235,.07); margin-bottom: .8rem;
 }
 .vmtax-reshero__label { font-family: var(--vmtax-font-mono); font-size: .74rem; letter-spacing: .1em; text-transform: uppercase; color: var(--vmtax-mut); margin-bottom: .4rem; }
 .vmtax-reshero__value { font-family: var(--vmtax-font-display); font-size: clamp(2.2rem, 6vw, 3.1rem); font-weight: 600; line-height: 1; background: var(--vmtax-grad-text); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
@@ -270,7 +270,7 @@
 .vmtax-row--total .vmtax-row__label { font-weight: 600; color: var(--vmtax-text); font-size: 1rem; }
 .vmtax-row--total .vmtax-row__value { font-size: 1.3rem; background: var(--vmtax-grad-text); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
 
-.vmtax-note { display: flex; gap: .7rem; padding: 1rem 1.1rem; margin-top: 1.4rem; border-radius: var(--vmtax-r-sm); background: rgba(251,191,36,.06); border: 1px solid rgba(251,191,36,.2); font-size: .84rem; color: var(--vmtax-soft); line-height: 1.6; }
+.vmtax-note { display: flex; gap: .7rem; padding: 1rem 1.1rem; margin-top: 1.4rem; border-radius: var(--vmtax-r-sm); background: rgba(37,99,235,.06); border: 1px solid rgba(37,99,235,.2); font-size: .84rem; color: var(--vmtax-soft); line-height: 1.6; }
 .vmtax-note svg { color: var(--vmtax-gold); flex-shrink: 0; margin-top: 2px; }
 
 /* placeholder before calc */
@@ -293,15 +293,15 @@
   overflow: hidden;
 }
 .vmtax-ccard:hover { transform: translateY(-6px); box-shadow: var(--vmtax-sh-glow); }
-.vmtax-ccard--win { border-color: rgba(74,222,128,.4); }
+.vmtax-ccard--win { border-color: rgba(21,128,61,.4); }
 .vmtax-ccard--win::before {
   content: "✓ Recommended"; position: absolute; top: 1.2rem; right: -2.4rem;
-  transform: rotate(35deg); background: var(--vmtax-green); color: #05230f;
+  transform: rotate(35deg); background: var(--vmtax-green); color: #fff;
   font-size: .68rem; font-weight: 700; letter-spacing: .04em; padding: .3rem 2.6rem;
 }
 .vmtax-ccard__name { font-family: var(--vmtax-font-mono); font-size: .74rem; letter-spacing: .12em; text-transform: uppercase; color: var(--vmtax-accent); margin-bottom: .8rem; }
 .vmtax-ccard__tax { font-family: var(--vmtax-font-display); font-size: clamp(1.8rem, 4vw, 2.5rem); font-weight: 600; line-height: 1; margin-bottom: .3rem; }
-.vmtax-ccard__tax.vmtax-win { background: linear-gradient(120deg, #86efac, #4ade80); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
+.vmtax-ccard__tax.vmtax-win { background: linear-gradient(120deg, #16A34A, #15803D); -webkit-background-clip: text; background-clip: text; -webkit-text-fill-color: transparent; }
 .vmtax-ccard__meta { font-size: .82rem; color: var(--vmtax-mut); margin-bottom: 1.2rem; }
 .vmtax-ccard__rows { display: flex; flex-direction: column; gap: .1rem; }
 .vmtax-crow { display: flex; justify-content: space-between; gap: 1rem; padding: .55rem 0; font-size: .86rem; border-bottom: 1px dashed var(--vmtax-stroke); }
@@ -311,7 +311,7 @@
 
 .vmtax-verdict {
   margin-top: 1.6rem; text-align: center; padding: 1.4rem 1.6rem; border-radius: var(--vmtax-r-lg);
-  border: 1px solid rgba(74,222,128,.3); background: linear-gradient(160deg, rgba(74,222,128,.1), rgba(56,189,248,.04));
+  border: 1px solid rgba(21,128,61,.3); background: linear-gradient(160deg, rgba(21,128,61,.07), rgba(37,99,235,.03));
 }
 .vmtax-verdict strong { color: var(--vmtax-green); }
 .vmtax-verdict__big { font-family: var(--vmtax-font-display); font-size: clamp(1.3rem, 3vw, 1.8rem); margin-top: .3rem; }
@@ -320,7 +320,7 @@
 .vmtax-bars { display: flex; align-items: flex-end; justify-content: center; gap: 2rem; height: 200px; margin: 1.6rem 0 .5rem; padding-top: 1rem; }
 .vmtax-barcol { display: flex; flex-direction: column; align-items: center; gap: .6rem; height: 100%; justify-content: flex-end; width: 110px; }
 .vmtax-bar { width: 100%; border-radius: 10px 10px 0 0; transition: height 1s var(--vmtax-ease); min-height: 4px; position: relative; }
-.vmtax-bar--old { background: linear-gradient(180deg, #818CF8, #6366F1); }
+.vmtax-bar--old { background: linear-gradient(180deg, #93C5FD, #60A5FA); }
 .vmtax-bar--new { background: var(--vmtax-grad); }
 .vmtax-barval { font-size: .82rem; font-weight: 600; }
 .vmtax-barlabel { font-size: .82rem; color: var(--vmtax-mut); }
@@ -357,7 +357,7 @@
 .vmtax-ratetable th, .vmtax-ratetable td { padding: .8rem 1rem; text-align: left; }
 .vmtax-ratetable th { background: var(--vmtax-bg-2); color: var(--vmtax-text); font-family: var(--vmtax-font-display); font-weight: 600; }
 .vmtax-ratetable td { color: var(--vmtax-soft); border-top: 1px solid var(--vmtax-stroke); }
-.vmtax-ratetable tbody tr:nth-child(even) { background: rgba(255,255,255,.015); }
+.vmtax-ratetable tbody tr:nth-child(even) { background: rgba(37,99,235,.03); }
 
 .vmtax-faq { display: flex; flex-direction: column; gap: .9rem; max-width: 860px; }
 .vmtax-faqitem { border: 1px solid var(--vmtax-stroke); border-radius: var(--vmtax-r-md); background: var(--vmtax-glass); overflow: hidden; transition: border-color .3s, background .3s; }
@@ -423,3 +423,9 @@
   .vmtax-root *, .vmtax-root *::before, .vmtax-root *::after { animation-duration: .001ms !important; transition-duration: .001ms !important; }
   .vmtax-reveal { opacity: 1 !important; transform: none !important; }
 }
+
+/* ---- fix: the module reset (.vmtax-root button) was stripping button colours ---- */
+.vmtax-root .vmtax-btn--primary { color: #fff; background: var(--vmtax-grad); background-size: 180% 180%; }
+.vmtax-root .vmtax-btn--gold    { color: #fff; background: var(--vmtax-grad-gold); }
+.vmtax-root .vmtax-btn--ghost   { color: var(--vmtax-text); background: var(--vmtax-glass); border: 1px solid var(--vmtax-stroke-2); }
+.vmtax-root .vmtax-btn--ghost:hover { color: #fff; border-color: transparent; }

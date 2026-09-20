@@ -1,5 +1,26 @@
 [
   {
+    "slug": "aoc-4-mgt-7-annual-filing-fy-2025-26",
+    "tag": "ROC",
+    "date": "September 2026",
+    "title": "AOC-4 and MGT-7: your company's annual filing for FY 2025-26",
+    "summary": "Dates that run from your AGM, what each form needs, and why ₹100 a day with no cap is the least of the problem."
+  },
+  {
+    "slug": "gstr-9-9c-fy-2025-26",
+    "tag": "GST",
+    "date": "September 2026",
+    "title": "GSTR-9 and 9C for FY 2025-26: who files what, by 31 December",
+    "summary": "Turnover thresholds, the September 2025 rate split that makes this year different, and what to reconcile before you open the form."
+  },
+  {
+    "slug": "belated-itr-31-december-2026",
+    "tag": "Income Tax",
+    "date": "September 2026",
+    "title": "Missed the ITR deadline? What a belated return costs you",
+    "summary": "The late fee, the interest, the losses you can't carry forward — and how to file a belated return without inviting a notice."
+  },
+  {
     "slug": "tax-audit-due-date-fy-2025-26",
     "tag": "Income Tax",
     "date": "September 2026",

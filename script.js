@@ -715,7 +715,7 @@ function initContactForm() {
     name: v => v.trim().length >= 2 || 'Please enter your name.',
     email: v => /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(v.trim()) || 'Enter a valid email address.',
     phone: v => /^[0-9+\-\s()]{7,15}$/.test(v.trim()) || 'Enter a valid phone number.',
-    service: v => v.trim() !== '' || 'Please select a service.',
+    service: v => v.trim() !== '' || 'Please pick a service.',
     message: v => v.trim().length >= 10 || 'A little more detail helps us prepare.'
   };
 
@@ -772,7 +772,7 @@ function initContactForm() {
 
     setTimeout(() => {
       if (submitText) submitText.textContent = 'Enquiry sent';
-      note.textContent = 'Thank you. We will reply within one working day.';
+      note.textContent = 'Thanks - a principal will reply within one working day.';
       note.className = 'contact__note is-success';
       form.reset();
       $$('.field', form).forEach(f => f.classList.remove('is-error'));

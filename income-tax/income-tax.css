@@ -35,9 +35,9 @@
   --vmtax-sh-lg:     0 30px 80px rgba(15,40,90,.14);
   --vmtax-sh-glow:   0 0 0 1px rgba(30,64,175,.12), 0 20px 60px -20px rgba(37,99,235,.35);
   --vmtax-r-sm: 12px; --vmtax-r-md: 18px; --vmtax-r-lg: 26px; --vmtax-r-xl: 34px; --vmtax-r-pill: 999px;
-  --vmtax-font-display: 'Fraunces', Georgia, serif;
-  --vmtax-font-body:    'Sora', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
-  --vmtax-font-mono:    'JetBrains Mono', ui-monospace, Menlo, monospace;
+  --vmtax-font-display: 'Manrope', 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --vmtax-font-body:    'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --vmtax-font-mono:    'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
   --vmtax-ease: cubic-bezier(.22,1,.36,1);
   --vmtax-container: 1200px;
   --vmtax-gutter: clamp(1.1rem, 4vw, 2.2rem);

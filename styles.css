@@ -86,9 +86,9 @@
   --r-pill: 999px;
 
   /* Type */
-  --font-display: 'Fraunces', Georgia, 'Times New Roman', serif;
-  --font-body:    'Sora', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
-  --font-mono:    'JetBrains Mono', ui-monospace, SFMono-Regular, Menlo, monospace;
+  --font-display: 'Manrope', 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --font-body:    'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --font-mono:    'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
 
   /* Spacing scale */
   --space-section: clamp(5rem, 10vw, 9rem);
@@ -2154,9 +2154,9 @@ p { color: var(--text-soft); }
   --tax-sh-lg:     0 30px 80px rgba(15,40,90,.14);
   --tax-sh-glow:   0 0 0 1px rgba(30,64,175,.12), 0 20px 60px -20px rgba(37,99,235,.35);
   --tax-r-sm: 12px; --tax-r-md: 18px; --tax-r-lg: 26px; --tax-r-xl: 34px; --tax-r-pill: 999px;
-  --tax-font-display: 'Fraunces', Georgia, serif;
-  --tax-font-body:    'Sora', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
-  --tax-font-mono:    'JetBrains Mono', ui-monospace, Menlo, monospace;
+  --tax-font-display: 'Manrope', 'Inter', system-ui, -apple-system, 'Segoe UI', sans-serif;
+  --tax-font-body:    'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --tax-font-mono:    'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
   --tax-ease: cubic-bezier(.22,1,.36,1);
   --tax-container: 1200px;
   --tax-gutter: clamp(1.1rem, 4vw, 2.2rem);
@@ -2669,17 +2669,5 @@ body.page-svc a, body.page-svc button, body.page-svc summary { cursor: pointer; 
 .article__meta { display: flex; flex-wrap: wrap; gap: .8rem; align-items: center; font-size: .84rem; color: var(--text-mut); margin-top: 1.2rem; }
 .article__tag { color: var(--primary); border: 1px solid var(--stroke-2); border-radius: var(--r-pill); padding: .25rem .8rem; font-size: .74rem; letter-spacing: .08em; text-transform: uppercase; }
 
-/* =========================================================
-   COPY REVISION (Oct 2026) — typography only, no colour changes
-   Smaller, more measured headings for a professional-practice tone.
-   ========================================================= */
-.hero__title { font-size: clamp(2.1rem, 3.9vw, 3.15rem); line-height: 1.14; letter-spacing: -.02em; }
-.hero__meta { gap: clamp(1.2rem, 3vw, 2.2rem); }
-.hero__lede { max-width: 560px; }
-.hero__meta-item strong { font-size: clamp(1.05rem, 1.6vw, 1.3rem); }
-.section__title { font-size: clamp(1.8rem, 3.6vw, 2.7rem); line-height: 1.15; }
-.stat strong { font-size: clamp(2rem, 4vw, 2.8rem); }
-.stat span { line-height: 1.45; }
-
-/* hero title lines carry data-reveal without .reveal, so the fade-up offset never cleared */
+/* fix: hero heading lines kept a 42px fade-up offset after revealing */
 [data-reveal].is-visible { transform: none; }

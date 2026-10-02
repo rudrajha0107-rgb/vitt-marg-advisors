@@ -11,7 +11,7 @@
   <meta name="keywords" content="tax consultant Noida, GST registration Noida, ITR filing Noida, ROC compliance, company registration Noida, virtual CFO, cost accountant Noida, CMA Noida, cost audit, internal audit" />
   <meta name="author" content="Vitt-Marg Advisors" />
   <meta name="robots" content="index, follow" />
-  <meta name="theme-color" content="#F8FAFC" />
+  <meta name="theme-color" content="#FFFFFF" />
   <link rel="canonical" href="https://vittmarg.com/" />
 
   <!-- ==================== OPEN GRAPH ==================== -->
@@ -36,10 +36,10 @@
   <!-- ==================== FONTS ==================== -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Manrope:wght@600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Sora:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
 
   <!-- ==================== STYLES ==================== -->
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css?v=20261003r" />
 
   <!-- ==================== SCHEMA / JSON-LD ==================== -->
   <script type="application/ld+json">
@@ -74,29 +74,82 @@
 
 <body>
 
-  <a class="skip-link" href="#main">Skip to content</a>
+  <!-- ============================================================= -->
+  <!-- PREMIUM LOADER -->
+  <!-- ============================================================= -->
+  <div class="loader" id="loader" aria-hidden="true">
+    <div class="loader__inner">
+      <div class="loader__mark">
+        <span class="loader__glyph">व</span>
+        <svg class="loader__ring" viewBox="0 0 120 120">
+          <circle class="loader__ring-track" cx="60" cy="60" r="54" />
+          <circle class="loader__ring-fill" cx="60" cy="60" r="54" />
+        </svg>
+      </div>
+      <div class="loader__word">
+        <span>V</span><span>I</span><span>T</span><span>T</span>
+        <span class="loader__sep">·</span>
+        <span>M</span><span>A</span><span>R</span><span>G</span>
+      </div>
+      <div class="loader__bar"><i id="loaderBar"></i></div>
+      <div class="loader__pct" id="loaderPct">0%</div>
+    </div>
+  </div>
 
-  <!-- ============================== NAVBAR ============================== -->
+  <!-- ============================================================= -->
+  <!-- ATMOSPHERE: AURORA + BLOBS + GRID + MOUSE GLOW -->
+  <!-- ============================================================= -->
+  <div class="atmosphere" aria-hidden="true">
+    <div class="aurora aurora--1"></div>
+    <div class="aurora aurora--2"></div>
+    <div class="aurora aurora--3"></div>
+    <div class="blob blob--1"></div>
+    <div class="blob blob--2"></div>
+    <div class="blob blob--3"></div>
+    <div class="grid-overlay"></div>
+    <div class="noise"></div>
+  </div>
+  <div class="mouse-glow" id="mouseGlow" aria-hidden="true"></div>
+
+  <!-- Custom cursor -->
+  <div class="cursor" id="cursor" aria-hidden="true"></div>
+  <div class="cursor-dot" id="cursorDot" aria-hidden="true"></div>
+
+  <!-- Scroll progress -->
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- ============================================================= -->
+  <!-- NAVBAR -->
+  <!-- ============================================================= -->
   <header class="nav" id="nav">
     <div class="container nav__inner">
-      <a href="#top" class="nav__brand" aria-label="Vitt-Marg Advisors home">
-        <img src="Assets/logo.jpg" alt="Vitt-Marg Advisors logo" class="nav__logo" width="40" height="40" />
-        <span class="nav__brand-text"><strong>Vitt-Marg</strong><em>Advisors</em></span>
+      <a href="#top" class="nav__brand" data-cursor="link" aria-label="Vitt-Marg Advisors home">
+        <img src="Assets/logo.jpg" alt="Vitt-Marg Advisors logo" class="nav__logo" width="44" height="44" />
+        <span class="nav__brand-text">
+          <strong>Vitt-Marg</strong>
+          <em>Advisors</em>
+        </span>
       </a>
 
       <nav class="nav__menu" id="navMenu" aria-label="Primary">
-        <a href="#services" class="nav__link">Services</a>
-        <a href="#why" class="nav__link">How We Work</a>
-        <a href="#team" class="nav__link">Leadership</a>
-        <a href="#pricing" class="nav__link">Fees</a>
-        <a href="blog/" class="nav__link">Insights</a>
-        <a href="income-tax/" class="nav__link">Tax Calculator</a>
-        <a href="#contact" class="nav__link">Contact</a>
-        <a href="#contact" class="btn btn--primary nav__menu-cta">Book a Consultation</a>
+        <a href="#services" class="nav__link" data-cursor="link">Services</a>
+        <a href="income-tax/" target="_blank" rel="noopener" class="nav__link" data-cursor="link">Tax Calculator</a>
+        <a href="#why" class="nav__link" data-cursor="link">How We Work</a>
+        <a href="#process" class="nav__link" data-cursor="link">Process</a>
+        <a href="#team" class="nav__link" data-cursor="link">Leadership</a>
+        <a href="#pricing" class="nav__link" data-cursor="link">Pricing</a>
+        <a href="blog/" class="nav__link" data-cursor="link">Insights</a>
+        <a href="#contact" class="nav__link" data-cursor="link">Contact</a>
       </nav>
 
       <div class="nav__actions">
-        <a href="#contact" class="btn btn--primary btn--sm">Book a Consultation</a>
+        <a href="tel:+919315639676" class="nav__phone" data-cursor="link">
+          <svg viewBox="0 0 24 24" width="16" height="16"><path fill="currentColor" d="M6.6 10.8a15.5 15.5 0 006.6 6.6l2.2-2.2a1 1 0 011-.24 11.4 11.4 0 003.6.58 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.4 11.4 0 00.58 3.6 1 1 0 01-.24 1z"/></svg>
+          <span>9315639676</span>
+        </a>
+        <a href="#contact" class="btn btn--primary btn--sm magnetic" data-cursor="button">
+          <span>Contact Us</span>
+        </a>
         <button class="nav__burger" id="navBurger" aria-label="Toggle menu" aria-expanded="false">
           <span></span><span></span><span></span>
         </button>
@@ -105,343 +158,566 @@
   </header>
 
   <a id="top"></a>
-  <main id="main">
 
-  <!-- ============================== HERO ============================== -->
+  <!-- ============================================================= -->
+  <!-- HERO -->
+  <!-- ============================================================= -->
   <section class="hero" id="hero">
     <div class="container hero__grid">
       <div class="hero__content">
-        <p class="hero__eyebrow">CMA-led practice · Sector 63, Noida</p>
-        <h1 class="hero__title">Tax, GST and ROC compliance in Noida and Delhi NCR</h1>
-        <p class="hero__lede">
-          Vitt-Marg Advisors handles income tax, GST, TDS, ROC filings, accounting,
+        <div class="hero__eyebrow reveal" data-reveal="fade-up">
+          <span class="dot"></span>
+          CMA-led practice · Sector 63, Noida
+        </div>
+
+        <h1 class="hero__title">
+          <span class="reveal-line"><span data-reveal="fade-up" data-delay="0">Tax, GST and ROC compliance</span></span>
+          <span class="reveal-line"><span data-reveal="fade-up" data-delay="80">in <span class="grad">Noida and Delhi NCR</span></span></span>
+        </h1>
+
+        <p class="hero__lede reveal" data-reveal="fade-up" data-delay="160">
+          <em>Vitt-Marg Advisors</em> handles income tax, GST, TDS, ROC filings, accounting,
           and cost and internal audit for proprietors, partnership firms, LLPs and private limited companies.
         </p>
-        <div class="hero__cta">
-          <a href="#contact" class="btn btn--primary btn--lg">Book a Consultation</a>
-          <a href="#services" class="btn btn--ghost btn--lg">View Services</a>
+
+        <div class="hero__cta reveal" data-reveal="fade-up" data-delay="240">
+          <a href="#contact" class="btn btn--primary magnetic" data-cursor="button">
+            <span>Book a Consultation</span>
+            <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M5 12h12l-4-4 1.4-1.4L21 12l-6.6 6.4L13 17l4-4H5z"/></svg>
+          </a>
+          <a href="#services" class="btn btn--ghost" data-cursor="button">
+            <span>View Services</span>
+          </a>
+        </div>
+
+        <div class="hero__meta reveal" data-reveal="fade-up" data-delay="320">
+          <div class="hero__meta-item">
+            <strong>Tax · GST · TDS</strong>
+            <span>returns and notices</span>
+          </div>
+          <div class="hero__meta-item">
+            <strong>ROC</strong>
+            <span>annual and event-based filings</span>
+          </div>
+          <div class="hero__meta-item">
+            <strong>Audit</strong>
+            <span>cost audit and internal audit</span>
+          </div>
         </div>
       </div>
 
-      <figure class="hero__media">
-        <img src="Assets/office.png" alt="Vitt-Marg Advisors office" class="hero__img" loading="eager" width="600" height="450" />
-      </figure>
-    </div>
-
-    <div class="container">
-      <dl class="hero__facts">
-        <div><dt>Tax · GST · TDS</dt><dd>Returns, reconciliations and notices</dd></div>
-        <div><dt>ROC</dt><dd>Annual and event-based filings</dd></div>
-        <div><dt>Audit</dt><dd>Cost audit and internal audit</dd></div>
-        <div><dt>Accounting</dt><dd>Monthly books and MIS</dd></div>
-      </dl>
-    </div>
-  </section>
-
-  <!-- ============================== TRUST BAR ============================== -->
-  <section class="trust" aria-label="Membership and filing portals">
-    <div class="container trust__inner">
-      <p class="trust__label">Membership and the portals we file on</p>
-      <ul class="trust__row">
-        <li>ICMAI member (CMA)</li>
-        <li>Income Tax e-Filing</li>
-        <li>GST portal</li>
-        <li>TRACES</li>
-        <li>MCA21</li>
-        <li>Udyam · DPIIT</li>
-      </ul>
-    </div>
-  </section>
-
-  <!-- ============================== SERVICES ============================== -->
-  <section class="section section--white" id="services">
-    <div class="container">
-      <div class="section__head reveal">
-        <div>
-          <p class="eyebrow">Services</p>
-          <h2 class="section__title">What we handle for clients</h2>
+      <div class="hero__visual">
+        <div class="hero__frame tilt" data-tilt>
+          <img src="Assets/office.png" alt="Vitt-Marg Advisors office" class="hero__img" loading="eager" width="600" height="400" />
+          <div class="hero__frame-glow"></div>
         </div>
-        <p class="section__lede">Fees are quoted for each engagement once we understand the scope and the volume of work.</p>
+
+        <!-- Floating cards -->
+        <div class="float-card float-card--1 tilt" data-tilt data-float>
+          <div class="float-card__icon g-blue">
+            <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M3 13h8V3H3zm0 8h8v-6H3zm10 0h8V11h-8zm0-18v6h8V3z"/></svg>
+          </div>
+          <div class="float-card__body">
+            <span class="float-card__label">GSTR-3B · monthly filers</span>
+            <strong class="float-card__value">Due on the 20th</strong>
+            <span class="float-card__sub">ITC matched with GSTR-2B</span>
+          </div>
+        </div>
+
+        <div class="float-card float-card--2 tilt" data-tilt data-float>
+          <div class="float-card__icon g-gold">
+            <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 2l2.4 7.3H22l-6 4.4 2.3 7.3L12 16.9 5.7 21l2.3-7.3-6-4.4h7.6z"/></svg>
+          </div>
+          <div class="float-card__body">
+            <span class="float-card__label">Accounting retainer</span>
+            <strong class="float-card__value">Monthly MIS</strong>
+            <span class="float-card__sub">books closed every month</span>
+          </div>
+        </div>
+
+        <div class="float-card float-card--3 tilt" data-tilt data-float>
+          <div class="spark">
+            <svg viewBox="0 0 120 40" preserveAspectRatio="none">
+              <polyline class="spark__line" points="0,32 15,28 30,30 45,20 60,24 75,12 90,16 105,6 120,10" />
+            </svg>
+          </div>
+          <div class="float-card__body">
+            <span class="float-card__label">Advance tax</span>
+            <strong class="float-card__value">15 Jun · Sep · Dec · Mar</strong>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero__scroll" aria-hidden="true">
+      <span>Scroll</span>
+      <i></i>
+    </div>
+  </section>
+
+  <!-- ============================================================= -->
+  <!-- TRUST BAR -->
+  <!-- ============================================================= -->
+  <section class="trust" id="trust" aria-label="Registrations and memberships">
+    <div class="container">
+      <p class="trust__label reveal" data-reveal="fade-up">Membership and the portals we file on</p>
+      <div class="trust__row">
+        <div class="trust__item reveal" data-reveal="fade-up" data-delay="0">ICMAI member (CMA)</div>
+        <div class="trust__item reveal" data-reveal="fade-up" data-delay="60">Income Tax e-Filing</div>
+        <div class="trust__item reveal" data-reveal="fade-up" data-delay="120">GST portal</div>
+        <div class="trust__item reveal" data-reveal="fade-up" data-delay="180">TRACES</div>
+        <div class="trust__item reveal" data-reveal="fade-up" data-delay="240">MCA21</div>
+        <div class="trust__item reveal" data-reveal="fade-up" data-delay="300">Udyam · DPIIT</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================= -->
+  <!-- INDUSTRIES -->
+  <!-- ============================================================= -->
+  <section class="section industries" id="industries">
+    <div class="container">
+      <div class="section__head">
+        <span class="eyebrow reveal" data-reveal="fade-up">Clients</span>
+        <h2 class="section__title reveal" data-reveal="fade-up" data-delay="80">
+          Sectors <span class="grad">we work with</span>
+        </h2>
+        <p class="section__lede reveal" data-reveal="fade-up" data-delay="160">
+          Compliance work differs by sector. These are the areas that usually come up for each.
+        </p>
       </div>
 
-      <ol class="catalogue reveal">
-        <li class="catalogue__item">
-          <span class="catalogue__no">01</span>
+      <div class="industries__grid">
+        <article class="ind-card reveal" data-reveal="fade-up" data-delay="0" data-cursor="card">
+          <div class="ind-card__icon"><svg viewBox="0 0 24 24" width="26" height="26"><path fill="currentColor" d="M3 21V7l9-4 9 4v14h-6v-6h-6v6zm4-9h2v-2H7zm4 0h2v-2h-2zm4 0h2v-2h-2z"/></svg></div>
+          <h3>Startups &amp; D2C</h3>
+          <p>Share allotments, ESOP accounting, DPIIT recognition, and books that hold up in due diligence.</p>
+        </article>
+        <article class="ind-card reveal" data-reveal="fade-up" data-delay="60" data-cursor="card">
+          <div class="ind-card__icon"><svg viewBox="0 0 24 24" width="26" height="26"><path fill="currentColor" d="M22 22H2v-2h1V9l7-5 7 5v11h1V9l3 2.2V20h1zM7 18h2v-6H7zm4 0h2v-6h-2z"/></svg></div>
+          <h3>Manufacturing</h3>
+          <p>ITC reconciliation, e-way bills, stock valuation, cost records and cost audit.</p>
+        </article>
+        <article class="ind-card reveal" data-reveal="fade-up" data-delay="120" data-cursor="card">
+          <div class="ind-card__icon"><svg viewBox="0 0 24 24" width="26" height="26"><path fill="currentColor" d="M4 4h16v4H4zm0 6h16v4H4zm0 6h10v4H4z"/></svg></div>
+          <h3>Professional Services</h3>
+          <p>TDS on professional fees, presumptive taxation, and partner remuneration and interest limits.</p>
+        </article>
+        <article class="ind-card reveal" data-reveal="fade-up" data-delay="180" data-cursor="card">
+          <div class="ind-card__icon"><svg viewBox="0 0 24 24" width="26" height="26"><path fill="currentColor" d="M12 2l9 4.9v6.2C21 18.4 17.1 22 12 23 6.9 22 3 18.4 3 13.1V6.9zM11 15l5-5-1.4-1.4L11 12.2 9.4 10.6 8 12z"/></svg></div>
+          <h3>Trading &amp; Retail</h3>
+          <p>GST across states, composition versus regular scheme, and stock and debtor reconciliation.</p>
+        </article>
+        <article class="ind-card reveal" data-reveal="fade-up" data-delay="240" data-cursor="card">
+          <div class="ind-card__icon"><svg viewBox="0 0 24 24" width="26" height="26"><path fill="currentColor" d="M2 12l10-9 10 9h-3v8h-5v-6H10v6H5v-8z"/></svg></div>
+          <h3>Real Estate</h3>
+          <p>RERA project accounts, TDS on property purchase, and tax on joint development agreements.</p>
+        </article>
+        <article class="ind-card reveal" data-reveal="fade-up" data-delay="300" data-cursor="card">
+          <div class="ind-card__icon"><svg viewBox="0 0 24 24" width="26" height="26"><path fill="currentColor" d="M3 3h18v4H3zm2 6h6v12H5zm8 0h6v5h-6zm0 7h6v5h-6z"/></svg></div>
+          <h3>NGO &amp; Trusts</h3>
+          <p>12A and 80G registration and renewal, FCRA returns, utilisation certificates and accounts for audit.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================= -->
+  <!-- SERVICES — 12+ CARDS -->
+  <!-- ============================================================= -->
+  <section class="section services" id="services">
+    <div class="container">
+      <div class="section__head">
+        <span class="eyebrow reveal" data-reveal="fade-up">Services</span>
+        <h2 class="section__title reveal" data-reveal="fade-up" data-delay="80">
+          What we <span class="grad">handle for clients</span>
+        </h2>
+        <p class="section__lede reveal" data-reveal="fade-up" data-delay="160">
+          Fees are quoted for each engagement once we understand the scope and the volume of work.
+        </p>
+      </div>
+
+      <div class="services__grid" id="servicesGrid">
+        <!-- 01 -->
+        <article class="svc-card tilt reveal" data-tilt data-reveal="fade-up" data-delay="0" data-cursor="card">
+          <div class="svc-card__top">
+            <span class="svc-card__no">01</span>
+            <div class="svc-card__icon"><svg viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M4 3h16v18l-4-2-4 2-4-2-4 2zm3 5h10V6H7zm0 4h10v-2H7zm0 4h7v-2H7z"/></svg></div>
+          </div>
           <h3>Income Tax</h3>
           <p>ITR filing for individuals, firms and companies, advance tax, capital gains computation, and replies to notices and scrutiny assessments.</p>
-          <a href="itr-filing-noida/" class="catalogue__link">ITR filing</a>
-        </li>
-        <li class="catalogue__item">
-          <span class="catalogue__no">02</span>
+          <a href="itr-filing-noida/" class="svc-card__link" data-cursor="link">ITR filing →</a>
+        </article>
+        <!-- 02 -->
+        <article class="svc-card tilt reveal" data-tilt data-reveal="fade-up" data-delay="50" data-cursor="card">
+          <div class="svc-card__top">
+            <span class="svc-card__no">02</span>
+            <div class="svc-card__icon"><svg viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M3 6h18v4H3zm0 8h18v4H3zm2-6h4v2H5zm0 8h4v2H5z"/></svg></div>
+          </div>
           <h3>GST</h3>
           <p>Registration, GSTR-1 and GSTR-3B, ITC reconciliation with GSTR-2B, GSTR-9 and 9C, and replies to department notices.</p>
-          <a href="gst-registration-noida/" class="catalogue__link">GST registration</a>
-        </li>
-        <li class="catalogue__item">
-          <span class="catalogue__no">03</span>
+          <a href="gst-registration-noida/" class="svc-card__link" data-cursor="link">GST registration →</a>
+        </article>
+        <!-- 03 -->
+        <article class="svc-card tilt reveal" data-tilt data-reveal="fade-up" data-delay="100" data-cursor="card">
+          <div class="svc-card__top">
+            <span class="svc-card__no">03</span>
+            <div class="svc-card__icon"><svg viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M6 2h9l5 5v15H6zm8 1.5V8h4.5zM8 12h8v-2H8zm0 4h8v-2H8z"/></svg></div>
+          </div>
           <h3>ROC Compliance</h3>
           <p>AOC-4, MGT-7, ADT-1, DIR-3 KYC, DPT-3 and MSME-1, plus event-based forms such as DIR-12, PAS-3 and INC-22.</p>
-          <a href="roc-compliance-noida/" class="catalogue__link">ROC compliance</a>
-        </li>
-        <li class="catalogue__item">
-          <span class="catalogue__no">04</span>
-          <h3>Company Incorporation</h3>
-          <p>Name reservation, SPICe+ and AGILE-PRO-S filing, with PAN, TAN, GST and bank account opening.</p>
-          <a href="company-registration-noida/" class="catalogue__link">Company registration</a>
-        </li>
-        <li class="catalogue__item">
-          <span class="catalogue__no">05</span>
-          <h3>LLP Registration</h3>
-          <p>Name reservation (RUN-LLP), FiLLiP filing, the LLP agreement in Form 3, and annual Forms 8 and 11.</p>
-          <a href="#contact" class="catalogue__link">Enquire</a>
-        </li>
-        <li class="catalogue__item">
-          <span class="catalogue__no">06</span>
-          <h3>Changes in a Company</h3>
-          <p>Share allotments and transfers, increase in authorised capital, and changes in directors or registered office.</p>
-          <a href="#contact" class="catalogue__link">Enquire</a>
-        </li>
-        <li class="catalogue__item">
-          <span class="catalogue__no">07</span>
-          <h3>Accounting</h3>
-          <p>Bookkeeping in Tally or Zoho Books, monthly closing, bank and ledger reconciliations, and MIS reports.</p>
-          <a href="#contact" class="catalogue__link">Enquire</a>
-        </li>
-        <li class="catalogue__item">
-          <span class="catalogue__no">08</span>
-          <h3>Cost &amp; Internal Audit</h3>
-          <p>Cost records and cost audit under Section 148, internal audit under Section 138, and process reviews with working papers.</p>
-          <a href="blog/cost-audit-cra-2-cra-4-fy-2025-26/" class="catalogue__link">Read about cost audit</a>
-        </li>
-        <li class="catalogue__item">
-          <span class="catalogue__no">09</span>
-          <h3>Payroll</h3>
-          <p>Monthly salary computation, PF and ESI returns, TDS on salary, Form 24Q and Form 16.</p>
-          <a href="#contact" class="catalogue__link">Enquire</a>
-        </li>
-        <li class="catalogue__item">
-          <span class="catalogue__no">10</span>
-          <h3>Virtual CFO</h3>
-          <p>Monthly MIS, cash-flow forecasts, budget versus actual, and finance support for board and investor meetings.</p>
-          <a href="#contact" class="catalogue__link">Enquire</a>
-        </li>
-        <li class="catalogue__item">
-          <span class="catalogue__no">11</span>
-          <h3>Business Advisory</h3>
-          <p>Choice of business entity, due diligence, and project reports and CMA data for bank loans.</p>
-          <a href="#contact" class="catalogue__link">Enquire</a>
-        </li>
-        <li class="catalogue__item">
-          <span class="catalogue__no">12</span>
-          <h3>Startup India</h3>
-          <p>DPIIT recognition, the 80-IAC tax holiday application, and compliance set-up for a new startup.</p>
-          <a href="#contact" class="catalogue__link">Enquire</a>
-        </li>
-        <li class="catalogue__item">
-          <span class="catalogue__no">13</span>
-          <h3>MSME / Udyam</h3>
-          <p>Udyam registration and updates, MSME-1 filing, and the 45-day payment rule for MSME suppliers.</p>
-          <a href="#contact" class="catalogue__link">Enquire</a>
-        </li>
-        <li class="catalogue__item">
-          <span class="catalogue__no">14</span>
+          <a href="roc-compliance-noida/" class="svc-card__link" data-cursor="link">ROC compliance →</a>
+        </article>
+        <!-- 04 -->
+        <article class="svc-card tilt reveal" data-tilt data-reveal="fade-up" data-delay="150" data-cursor="card">
+          <div class="svc-card__top">
+            <span class="svc-card__no">04</span>
+            <div class="svc-card__icon"><svg viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M12 2l3 5 5 .7-3.6 3.6.9 5.7L12 20l-5.2 2 .9-5.7L4 7.7 9 7z"/></svg></div>
+          </div>
           <h3>Trademark</h3>
           <p>Trademark search, filing of the application, and replies to examination reports.</p>
-          <a href="#contact" class="catalogue__link">Enquire</a>
-        </li>
-        <li class="catalogue__item">
-          <span class="catalogue__no">15</span>
+          <a href="#contact" class="svc-card__link" data-cursor="link">Enquire →</a>
+        </article>
+        <!-- 05 -->
+        <article class="svc-card tilt reveal" data-tilt data-reveal="fade-up" data-delay="0" data-cursor="card">
+          <div class="svc-card__top">
+            <span class="svc-card__no">05</span>
+            <div class="svc-card__icon"><svg viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M4 21V7l8-4 8 4v14h-5v-7H9v7zm3-11h2V8H7zm8 0h2V8h-2z"/></svg></div>
+          </div>
+          <h3>Company Incorporation</h3>
+          <p>Name reservation, SPICe+ and AGILE-PRO-S filing, with PAN, TAN, GST and bank account opening.</p>
+          <a href="company-registration-noida/" class="svc-card__link" data-cursor="link">Company registration →</a>
+        </article>
+        <!-- 06 -->
+        <article class="svc-card tilt reveal" data-tilt data-reveal="fade-up" data-delay="50" data-cursor="card">
+          <div class="svc-card__top">
+            <span class="svc-card__no">06</span>
+            <div class="svc-card__icon"><svg viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M7 3h10a3 3 0 013 3v12a3 3 0 01-3 3H7a3 3 0 01-3-3V6a3 3 0 013-3zm1 6h8V7H8zm0 4h8v-2H8zm0 4h5v-2H8z"/></svg></div>
+          </div>
+          <h3>LLP Registration</h3>
+          <p>Name reservation (RUN-LLP), FiLLiP filing, the LLP agreement in Form 3, and annual Forms 8 and 11.</p>
+          <a href="#contact" class="svc-card__link" data-cursor="link">Enquire →</a>
+        </article>
+        <!-- 07 -->
+        <article class="svc-card tilt reveal" data-tilt data-reveal="fade-up" data-delay="100" data-cursor="card">
+          <div class="svc-card__top">
+            <span class="svc-card__no">07</span>
+            <div class="svc-card__icon"><svg viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M12 2a10 10 0 100 20 10 10 0 000-20zm1 15h-2v-2h2zm0-4h-2V7h2z"/></svg></div>
+          </div>
+          <h3>Changes in a Company</h3>
+          <p>Share allotments and transfers, increase in authorised capital, and changes in directors or registered office.</p>
+          <a href="#contact" class="svc-card__link" data-cursor="link">Enquire →</a>
+        </article>
+        <!-- 08 -->
+        <article class="svc-card tilt reveal" data-tilt data-reveal="fade-up" data-delay="150" data-cursor="card">
+          <div class="svc-card__top">
+            <span class="svc-card__no">08</span>
+            <div class="svc-card__icon"><svg viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M4 4h16v12H4zm0 14h16v2H4zm3-6l3 3 7-7-1.4-1.4L10 12.2 8.4 10.6z"/></svg></div>
+          </div>
+          <h3>Accounting</h3>
+          <p>Bookkeeping in Tally or Zoho Books, monthly closing, bank and ledger reconciliations, and MIS reports.</p>
+          <a href="#contact" class="svc-card__link" data-cursor="link">Enquire →</a>
+        </article>
+        <!-- 09 -->
+        <article class="svc-card tilt reveal" data-tilt data-reveal="fade-up" data-delay="0" data-cursor="card">
+          <div class="svc-card__top">
+            <span class="svc-card__no">09</span>
+            <div class="svc-card__icon"><svg viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M3 3h18v18H3zm4 12h2V9H7zm4 2h2V7h-2zm4-2h2v-4h-2z"/></svg></div>
+          </div>
+          <h3>Cost &amp; Internal Audit</h3>
+          <p>Cost records and cost audit under Section 148, internal audit under Section 138, and process reviews with working papers.</p>
+          <a href="blog/cost-audit-cra-2-cra-4-fy-2025-26/" class="svc-card__link" data-cursor="link">Read about cost audit →</a>
+        </article>
+        <!-- 10 -->
+        <article class="svc-card tilt reveal" data-tilt data-reveal="fade-up" data-delay="50" data-cursor="card">
+          <div class="svc-card__top">
+            <span class="svc-card__no">10</span>
+            <div class="svc-card__icon"><svg viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M12 2l9 5v10l-9 5-9-5V7zm0 2.3L5 8v8l7 3.7L19 16V8z"/></svg></div>
+          </div>
+          <h3>Business Advisory</h3>
+          <p>Choice of business entity, due diligence, and project reports and CMA data for bank loans.</p>
+          <a href="#contact" class="svc-card__link" data-cursor="link">Enquire →</a>
+        </article>
+        <!-- 11 -->
+        <article class="svc-card tilt reveal" data-tilt data-reveal="fade-up" data-delay="100" data-cursor="card">
+          <div class="svc-card__top">
+            <span class="svc-card__no">11</span>
+            <div class="svc-card__icon"><svg viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M4 4h16v4H4zm0 6h10v10H4zm12 0h4v4h-4zm0 6h4v4h-4z"/></svg></div>
+          </div>
+          <h3>Virtual CFO</h3>
+          <p>Monthly MIS, cash-flow forecasts, budget versus actual, and finance support for board and investor meetings.</p>
+          <a href="#contact" class="svc-card__link" data-cursor="link">Enquire →</a>
+        </article>
+        <!-- 12 -->
+        <article class="svc-card tilt reveal" data-tilt data-reveal="fade-up" data-delay="150" data-cursor="card">
+          <div class="svc-card__top">
+            <span class="svc-card__no">12</span>
+            <div class="svc-card__icon"><svg viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M13 2L3 14h7l-1 8 10-12h-7z"/></svg></div>
+          </div>
+          <h3>Startup India</h3>
+          <p>DPIIT recognition, the 80-IAC tax holiday application, and compliance set-up for a new startup.</p>
+          <a href="#contact" class="svc-card__link" data-cursor="link">Enquire →</a>
+        </article>
+        <!-- 13 -->
+        <article class="svc-card tilt reveal" data-tilt data-reveal="fade-up" data-delay="0" data-cursor="card">
+          <div class="svc-card__top">
+            <span class="svc-card__no">13</span>
+            <div class="svc-card__icon"><svg viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M12 2l2 5 5 .5-4 3.5 1 5-4-3-4 3 1-5-4-3.5 5-.5z"/></svg></div>
+          </div>
           <h3>ISO Certification</h3>
           <p>Documentation for ISO 9001 and ISO 27001, and coordination with the certification body.</p>
-          <a href="#contact" class="catalogue__link">Enquire</a>
-        </li>
-      </ol>
-    </div>
-  </section>
-
-  <!-- ============================== SECTORS ============================== -->
-  <section class="section" id="industries">
-    <div class="container">
-      <div class="section__head reveal">
-        <div>
-          <p class="eyebrow">Clients</p>
-          <h2 class="section__title">Sectors we work with</h2>
-        </div>
-        <p class="section__lede">Compliance work differs by sector. These are the areas that usually come up for each.</p>
-      </div>
-
-      <div class="sectors reveal">
-        <div class="sector"><h3>Startups &amp; D2C</h3><p>Share allotments, ESOP accounting, DPIIT recognition, and books that hold up in due diligence.</p></div>
-        <div class="sector"><h3>Manufacturing</h3><p>ITC reconciliation, e-way bills, stock valuation, cost records and cost audit.</p></div>
-        <div class="sector"><h3>Professional Services</h3><p>TDS on professional fees, presumptive taxation, and partner remuneration and interest limits.</p></div>
-        <div class="sector"><h3>Trading &amp; Retail</h3><p>GST across states, composition versus regular scheme, and stock and debtor reconciliation.</p></div>
-        <div class="sector"><h3>Real Estate</h3><p>RERA project accounts, TDS on property purchase, and tax on joint development agreements.</p></div>
-        <div class="sector"><h3>NGO &amp; Trusts</h3><p>12A and 80G registration and renewal, FCRA returns, utilisation certificates and accounts for audit.</p></div>
+          <a href="#contact" class="svc-card__link" data-cursor="link">Enquire →</a>
+        </article>
+        <!-- 14 -->
+        <article class="svc-card tilt reveal" data-tilt data-reveal="fade-up" data-delay="50" data-cursor="card">
+          <div class="svc-card__top">
+            <span class="svc-card__no">14</span>
+            <div class="svc-card__icon"><svg viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M3 3h18v6H3zm0 8h8v10H3zm10 0h8v10h-8z"/></svg></div>
+          </div>
+          <h3>MSME / Udyam</h3>
+          <p>Udyam registration and updates, MSME-1 filing, and the 45-day payment rule for MSME suppliers.</p>
+          <a href="#contact" class="svc-card__link" data-cursor="link">Enquire →</a>
+        </article>
+        <!-- 15 -->
+        <article class="svc-card tilt reveal" data-tilt data-reveal="fade-up" data-delay="100" data-cursor="card">
+          <div class="svc-card__top">
+            <span class="svc-card__no">15</span>
+            <div class="svc-card__icon"><svg viewBox="0 0 24 24" width="22" height="22"><path fill="currentColor" d="M12 2a5 5 0 015 5v2a5 5 0 01-10 0V7a5 5 0 015-5zM4 21v-1a6 6 0 016-6h4a6 6 0 016 6v1z"/></svg></div>
+          </div>
+          <h3>Payroll</h3>
+          <p>Monthly salary computation, PF and ESI returns, TDS on salary, Form 24Q and Form 16.</p>
+          <a href="#contact" class="svc-card__link" data-cursor="link">Enquire →</a>
+        </article>
       </div>
     </div>
   </section>
 
-  <!-- ============================== HOW WE WORK ============================== -->
-  <section class="section section--white" id="why">
+
+
+  <!-- ============================================================= -->
+  <!-- WHY CHOOSE US -->
+  <!-- ============================================================= -->
+  <section class="section why" id="why">
     <div class="container why__grid">
-      <div class="why__intro reveal">
-        <p class="eyebrow">How we work</p>
-        <h2 class="section__title">Work done before the due date</h2>
-        <p class="section__lede">
+      <div class="why__intro">
+        <span class="eyebrow reveal" data-reveal="fade-right">How we work</span>
+        <h2 class="section__title reveal" data-reveal="fade-right" data-delay="80">
+          Work done <span class="grad">before the due date</span>
+        </h2>
+        <p class="section__lede reveal" data-reveal="fade-right" data-delay="160">
           Most interest, late fees and penalties we see come from missed dates, not from
           difficult law. So every client's work runs on a due-date calendar.
         </p>
-        <a href="#contact" class="btn btn--ghost">Talk to a Professional</a>
+        <div class="why__cta reveal" data-reveal="fade-right" data-delay="240">
+          <a href="#contact" class="btn btn--primary magnetic" data-cursor="button"><span>Talk to a Professional</span></a>
+        </div>
       </div>
 
-      <ol class="principles reveal">
-        <li>
-          <span class="principles__no">01</span>
-          <div>
+      <div class="why__features">
+        <article class="feat reveal" data-reveal="fade-left" data-delay="0" data-cursor="card">
+          <div class="feat__num">01</div>
+          <div class="feat__body">
             <h3>You deal with a principal</h3>
             <p>The person who takes your brief reviews the work before it is filed and is the one you call with questions.</p>
           </div>
-        </li>
-        <li>
-          <span class="principles__no">02</span>
-          <div>
+        </article>
+        <article class="feat reveal" data-reveal="fade-left" data-delay="80" data-cursor="card">
+          <div class="feat__num">02</div>
+          <div class="feat__body">
             <h3>A due-date calendar for each client</h3>
             <p>GST, TDS, advance tax, ROC and audit dates for every entity are tracked together. Data requests go out early and drafts reach you before the due date.</p>
           </div>
-        </li>
-        <li>
-          <span class="principles__no">03</span>
-          <div>
+        </article>
+        <article class="feat reveal" data-reveal="fade-left" data-delay="160" data-cursor="card">
+          <div class="feat__num">03</div>
+          <div class="feat__body">
             <h3>Working papers on every file</h3>
             <p>Computations, reconciliations and supporting documents are kept on record, so a notice or an auditor's query can be answered from the file.</p>
           </div>
-        </li>
-        <li>
-          <span class="principles__no">04</span>
-          <div>
+        </article>
+        <article class="feat reveal" data-reveal="fade-left" data-delay="240" data-cursor="card">
+          <div class="feat__num">04</div>
+          <div class="feat__body">
             <h3>Advice in plain language</h3>
             <p>We tell you what a provision means for your tax and cash flow, and what you need to do — not just the section number.</p>
           </div>
-        </li>
-      </ol>
-    </div>
-
-    <div class="container">
-      <div class="duedates reveal">
-        <p class="duedates__label">Monthly due dates we track</p>
-        <dl class="duedates__grid">
-          <div><dt>7th</dt><dd>TDS and TCS deposit for the previous month</dd></div>
-          <div><dt>11th</dt><dd>GSTR-1 for monthly filers</dd></div>
-          <div><dt>15th</dt><dd>PF and ESI contributions</dd></div>
-          <div><dt>20th</dt><dd>GSTR-3B for monthly filers</dd></div>
-        </dl>
+        </article>
       </div>
     </div>
   </section>
 
-  <!-- ============================== PROCESS ============================== -->
-  <section class="section" id="process">
+  <!-- ============================================================= -->
+  <!-- STATS COUNTER -->
+  <!-- ============================================================= -->
+  <section class="section stats" id="stats">
     <div class="container">
-      <div class="section__head reveal">
-        <div>
-          <p class="eyebrow">Process</p>
-          <h2 class="section__title">How a new engagement starts</h2>
+      <div class="section__head">
+        <span class="eyebrow reveal" data-reveal="fade-up">Monthly due dates we track</span>
+      </div>
+      <div class="stats__grid">
+        <div class="stat reveal" data-reveal="scale" data-delay="0">
+          <strong>7th</strong>
+          <span>TDS and TCS deposit for the previous month</span>
         </div>
-        <p class="section__lede">The first few weeks go into understanding where things stand. After that, the work runs on a monthly cycle.</p>
+        <div class="stat reveal" data-reveal="scale" data-delay="80">
+          <strong>11th</strong>
+          <span>GSTR-1 for monthly filers</span>
+        </div>
+        <div class="stat reveal" data-reveal="scale" data-delay="160">
+          <strong>15th</strong>
+          <span>PF and ESI contributions</span>
+        </div>
+        <div class="stat reveal" data-reveal="scale" data-delay="240">
+          <strong>20th</strong>
+          <span>GSTR-3B for monthly filers</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================================================= -->
+  <!-- PROCESS / TIMELINE -->
+  <!-- ============================================================= -->
+  <section class="section process" id="process">
+    <div class="container">
+      <div class="section__head">
+        <span class="eyebrow reveal" data-reveal="fade-up">Process</span>
+        <h2 class="section__title reveal" data-reveal="fade-up" data-delay="80">
+          How a new <span class="grad">engagement starts</span>
+        </h2>
+        <p class="section__lede reveal" data-reveal="fade-up" data-delay="160">
+          The first few weeks go into understanding where things stand. After that, the work runs on a monthly cycle.
+        </p>
       </div>
 
-      <ol class="steps reveal">
-        <li class="step">
-          <span class="step__no">1</span>
-          <span class="step__when">Week 1</span>
-          <h3>Review of the current position</h3>
-          <p>We list every registration — PAN, TAN, GSTIN, CIN or LLPIN — and check pending returns, open notices and outstanding demands.</p>
+      <ol class="timeline" id="timeline">
+        <li class="timeline__step reveal" data-reveal="fade-up" data-delay="0">
+          <div class="timeline__marker"><span>01</span></div>
+          <div class="timeline__card" data-cursor="card">
+            <h3>Review of the current position</h3>
+            <p>We list every registration — PAN, TAN, GSTIN, CIN or LLPIN — and check pending returns, open notices and outstanding demands.</p>
+            <span class="timeline__tag">Week 1</span>
+          </div>
         </li>
-        <li class="step">
-          <span class="step__no">2</span>
-          <span class="step__when">Weeks 2–3</span>
-          <h3>Books and filings brought up to date</h3>
-          <p>Ledgers are reconciled with the bank, GSTR-2B and AIS/26AS, pending returns are filed, and the due-date calendar is set up.</p>
+        <li class="timeline__step reveal" data-reveal="fade-up" data-delay="100">
+          <div class="timeline__marker"><span>02</span></div>
+          <div class="timeline__card" data-cursor="card">
+            <h3>Books and filings brought up to date</h3>
+            <p>Ledgers are reconciled with the bank, GSTR-2B and AIS/26AS, pending returns are filed, and the due-date calendar is set up.</p>
+            <span class="timeline__tag">Weeks 2–3</span>
+          </div>
         </li>
-        <li class="step">
-          <span class="step__no">3</span>
-          <span class="step__when">Ongoing</span>
-          <h3>Monthly compliance</h3>
-          <p>Books are closed each month. GST and TDS returns are prepared and sent to you for approval before they are filed.</p>
+        <li class="timeline__step reveal" data-reveal="fade-up" data-delay="200">
+          <div class="timeline__marker"><span>03</span></div>
+          <div class="timeline__card" data-cursor="card">
+            <h3>Monthly compliance</h3>
+            <p>Books are closed each month. GST and TDS returns are prepared and sent to you for approval before they are filed.</p>
+            <span class="timeline__tag">Ongoing</span>
+          </div>
         </li>
-        <li class="step">
-          <span class="step__no">4</span>
-          <span class="step__when">Quarterly</span>
-          <h3>Quarterly review</h3>
-          <p>A meeting to go through the numbers, advance tax, changes in law that affect you, and anything that needs a decision.</p>
+        <li class="timeline__step reveal" data-reveal="fade-up" data-delay="300">
+          <div class="timeline__marker"><span>04</span></div>
+          <div class="timeline__card" data-cursor="card">
+            <h3>Quarterly review</h3>
+            <p>A meeting to go through the numbers, advance tax, changes in law that affect you, and anything that needs a decision.</p>
+            <span class="timeline__tag">Quarterly</span>
+          </div>
         </li>
       </ol>
     </div>
   </section>
 
-  <!-- ============================== LEADERSHIP ============================== -->
-  <section class="section section--white" id="team">
+  <!-- ============================================================= -->
+  <!-- LEADERSHIP -->
+  <!-- ============================================================= -->
+  <section class="section team" id="team">
     <div class="container">
-      <div class="section__head reveal">
-        <div>
-          <p class="eyebrow">Leadership</p>
-          <h2 class="section__title">Who you will work with</h2>
-        </div>
-        <p class="section__lede">Both principals work on client files directly.</p>
+      <div class="section__head">
+        <span class="eyebrow reveal" data-reveal="fade-up">Leadership</span>
+        <h2 class="section__title reveal" data-reveal="fade-up" data-delay="80">
+          Who you <span class="grad">will work with</span>
+        </h2>
+        <p class="section__lede reveal" data-reveal="fade-up" data-delay="160">
+          Both principals work on client files directly.
+        </p>
       </div>
 
       <div class="team__grid">
-        <article class="member reveal">
-          <img class="member__photo" src="Assets/Rudra.jpg?v=2" alt="CMA Sudarshan Jha, Founder" loading="lazy" width="400" height="480" />
+        <article class="member tilt reveal" data-tilt data-reveal="fade-up" data-delay="0" data-cursor="card">
+          <div class="member__photo">
+            <img src="Assets/Rudra.jpg?v=2" alt="CMA Sudarshan Jha, Founder" loading="lazy" width="400" height="480" />
+            <div class="member__ring"></div>
+          </div>
           <div class="member__body">
             <h3>CMA Sudarshan Jha</h3>
-            <p class="member__role">Founder</p>
+            <span class="member__role">Founder</span>
             <p>Cost and Management Accountant, member of ICMAI. Leads the income tax, GST, cost audit and internal audit work, and reviews client files before filing.</p>
-            <p class="member__links"><a href="mailto:rudrajha0107@gmail.com">Email</a><a href="tel:+919315639676">+91 93156 39676</a></p>
+            <div class="member__links">
+              <a href="mailto:rudrajha0107@gmail.com" data-cursor="link" aria-label="Email CMA Sudarshan Jha">
+                <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M2 4h20v16H2zm10 7L3 5v14h18V5z"/></svg>
+              </a>
+              <a href="tel:+919315639676" data-cursor="link" aria-label="Call CMA Sudarshan Jha">
+                <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M6.6 10.8a15.5 15.5 0 006.6 6.6l2.2-2.2a1 1 0 011-.24 11.4 11.4 0 003.6.58 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.4 11.4 0 00.58 3.6 1 1 0 01-.24 1z"/></svg>
+              </a>
+            </div>
           </div>
         </article>
 
-        <article class="member reveal">
-          <img class="member__photo" src="Assets/Arnav.jpg?v=2" alt="Arnav Gupta, Director" loading="lazy" width="400" height="480" />
+        <article class="member tilt reveal" data-tilt data-reveal="fade-up" data-delay="120" data-cursor="card">
+          <div class="member__photo">
+            <img src="Assets/Arnav.jpg?v=2" alt="Arnav Gupta, Director" loading="lazy" width="400" height="480" />
+            <div class="member__ring"></div>
+          </div>
           <div class="member__body">
             <h3>Arnav Gupta</h3>
-            <p class="member__role">Director</p>
+            <span class="member__role">Director</span>
             <p>Looks after accounting, ROC compliance and monthly MIS for retainer clients, and manages the due-date calendar.</p>
-            <p class="member__links"><a href="mailto:rudrajha0107@gmail.com">Email</a><a href="tel:+919315639676">+91 93156 39676</a></p>
+            <div class="member__links">
+              <a href="mailto:rudrajha0107@gmail.com" data-cursor="link" aria-label="Email Arnav Gupta">
+                <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M2 4h20v16H2zm10 7L3 5v14h18V5z"/></svg>
+              </a>
+              <a href="tel:+919315639676" data-cursor="link" aria-label="Call Arnav Gupta">
+                <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M6.6 10.8a15.5 15.5 0 006.6 6.6l2.2-2.2a1 1 0 011-.24 11.4 11.4 0 003.6.58 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.4 11.4 0 00.58 3.6 1 1 0 01-.24 1z"/></svg>
+              </a>
+            </div>
           </div>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- ============================== FEES ============================== -->
-  <section class="section" id="pricing">
+  <!-- ============================================================= -->
+  <!-- PRICING -->
+  <!-- ============================================================= -->
+  <section class="section pricing" id="pricing">
     <div class="container">
-      <div class="section__head reveal">
-        <div>
-          <p class="eyebrow">Fees</p>
-          <h2 class="section__title">Indicative monthly fees</h2>
-        </div>
-        <p class="section__lede">
+      <div class="section__head">
+        <span class="eyebrow reveal" data-reveal="fade-up">Fees</span>
+        <h2 class="section__title reveal" data-reveal="fade-up" data-delay="80">
+          Indicative <span class="grad">monthly fees</span>
+        </h2>
+        <p class="section__lede reveal" data-reveal="fade-up" data-delay="160">
           Starting fees for common monthly work. The final fee depends on transaction volume and the number
           of GSTINs and entities, and is confirmed in writing before work begins.
         </p>
       </div>
 
-      <div class="pricing__toggle">
+      <div class="pricing__toggle reveal" data-reveal="fade-up" data-delay="200">
         <span class="is-active" id="billMonthly">Monthly</span>
         <button class="pricing__switch" id="billSwitch" aria-label="Toggle billing period"><i></i></button>
-        <span id="billYearly">Billed yearly <em>(15% lower)</em></span>
+        <span id="billYearly">Yearly <em>−15%</em></span>
       </div>
 
-      <div class="pricing__grid reveal">
-        <article class="plan">
+      <div class="pricing__grid">
+        <article class="plan tilt reveal" data-tilt data-reveal="fade-up" data-delay="0" data-cursor="card">
           <header class="plan__head">
             <h3>Basic</h3>
             <p>Proprietors, freelancers and professionals</p>
           </header>
           <div class="plan__price">
-            <span class="plan__cur">₹</span><strong class="plan__amt" data-monthly="2999" data-yearly="2549">2,999</strong><span class="plan__per">per month</span>
+            <span class="plan__cur">₹</span>
+            <strong class="plan__amt" data-monthly="2999" data-yearly="2549">2,999</strong>
+            <span class="plan__per">/mo</span>
           </div>
           <ul class="plan__list">
             <li>Monthly bookkeeping</li>
@@ -450,17 +726,19 @@
             <li>Support on email and phone</li>
             <li>Quarterly review call</li>
           </ul>
-          <a href="#contact" class="btn btn--ghost btn--block">Discuss Your Requirement</a>
+          <a href="#contact" class="btn btn--ghost btn--block" data-cursor="button"><span>Discuss Your Requirement</span></a>
         </article>
 
-        <article class="plan plan--featured">
+        <article class="plan plan--featured tilt reveal" data-tilt data-reveal="fade-up" data-delay="100" data-cursor="card">
+          <div class="plan__badge">For companies</div>
           <header class="plan__head">
-            <p class="plan__badge">For companies</p>
             <h3>Standard</h3>
             <p>Private limited companies and SMEs</p>
           </header>
           <div class="plan__price">
-            <span class="plan__cur">₹</span><strong class="plan__amt" data-monthly="8999" data-yearly="7649">8,999</strong><span class="plan__per">per month</span>
+            <span class="plan__cur">₹</span>
+            <strong class="plan__amt" data-monthly="8999" data-yearly="7649">8,999</strong>
+            <span class="plan__per">/mo</span>
           </div>
           <ul class="plan__list">
             <li>Everything in Basic</li>
@@ -470,16 +748,18 @@
             <li>Monthly MIS report</li>
             <li>Direct access to the principal</li>
           </ul>
-          <a href="#contact" class="btn btn--primary btn--block">Discuss Your Requirement</a>
+          <a href="#contact" class="btn btn--primary btn--block magnetic" data-cursor="button"><span>Discuss Your Requirement</span></a>
         </article>
 
-        <article class="plan">
+        <article class="plan tilt reveal" data-tilt data-reveal="fade-up" data-delay="200" data-cursor="card">
           <header class="plan__head">
             <h3>Extended</h3>
             <p>Larger companies and groups</p>
           </header>
           <div class="plan__price">
-            <span class="plan__cur">₹</span><strong class="plan__amt" data-monthly="24999" data-yearly="21249">24,999</strong><span class="plan__per">per month</span>
+            <span class="plan__cur">₹</span>
+            <strong class="plan__amt" data-monthly="24999" data-yearly="21249">24,999</strong>
+            <span class="plan__per">/mo</span>
           </div>
           <ul class="plan__list">
             <li>Everything in Standard</li>
@@ -489,117 +769,175 @@
             <li>Due diligence support</li>
             <li>A named engagement manager</li>
           </ul>
-          <a href="#contact" class="btn btn--ghost btn--block">Contact Us</a>
+          <a href="#contact" class="btn btn--ghost btn--block" data-cursor="button"><span>Contact Us</span></a>
         </article>
       </div>
     </div>
   </section>
 
-  <!-- ============================== FAQ ============================== -->
-  <section class="section section--white" id="faq">
+  <!-- ============================================================= -->
+  <!-- FAQ -->
+  <!-- ============================================================= -->
+  <section class="section faq" id="faq">
     <div class="container faq__grid">
-      <div class="faq__intro reveal">
-        <p class="eyebrow">FAQ</p>
-        <h2 class="section__title">Common questions</h2>
-        <p class="section__lede">Questions clients usually ask before engaging us. For anything else, call or write to us.</p>
-        <a href="#contact" class="btn btn--ghost">Contact Us</a>
+      <div class="faq__intro">
+        <span class="eyebrow reveal" data-reveal="fade-right">FAQ</span>
+        <h2 class="section__title reveal" data-reveal="fade-right" data-delay="80">
+          Common <span class="grad">questions</span>
+        </h2>
+        <p class="section__lede reveal" data-reveal="fade-right" data-delay="160">
+          Questions clients usually ask before engaging us. For anything else, call or write to us.
+        </p>
+        <a href="#contact" class="btn btn--primary magnetic reveal" data-reveal="fade-right" data-delay="240" data-cursor="button"><span>Contact Us</span></a>
       </div>
 
       <div class="faq__list" id="faqList">
-        <div class="faq__item">
-          <button class="faq__q" aria-expanded="false"><span>Can you take over mid-year from another accountant or CA?</span><i class="faq__icon"></i></button>
+        <div class="faq__item reveal" data-reveal="fade-left" data-delay="0">
+          <button class="faq__q" data-cursor="link" aria-expanded="false">
+            <span>Can you take over mid-year from another accountant or CA?</span>
+            <i class="faq__icon"></i>
+          </button>
           <div class="faq__a"><p>Yes. We review the books to date, collect portal logins and past returns, and take over pending filings from the next due date. If the change involves an auditor, the outgoing auditor is informed as professional practice requires.</p></div>
         </div>
-        <div class="faq__item">
-          <button class="faq__q" aria-expanded="false"><span>Do you handle GST across multiple states?</span><i class="faq__icon"></i></button>
+        <div class="faq__item reveal" data-reveal="fade-left" data-delay="60">
+          <button class="faq__q" data-cursor="link" aria-expanded="false">
+            <span>Do you handle GST across multiple states?</span>
+            <i class="faq__icon"></i>
+          </button>
           <div class="faq__a"><p>Yes. Each state registration files its own GSTR-1 and GSTR-3B and annual return. We reconcile ITC with GSTR-2B for each GSTIN and track e-way bills and cross-charge where it applies.</p></div>
         </div>
-        <div class="faq__item">
-          <button class="faq__q" aria-expanded="false"><span>What does the Virtual CFO service include?</span><i class="faq__icon"></i></button>
+        <div class="faq__item reveal" data-reveal="fade-left" data-delay="120">
+          <button class="faq__q" data-cursor="link" aria-expanded="false">
+            <span>What does the Virtual CFO service include?</span>
+            <i class="faq__icon"></i>
+          </button>
           <div class="faq__a"><p>Monthly MIS, a cash-flow forecast, budget versus actual, and a monthly review meeting. It suits companies that need finance oversight but not a full-time CFO.</p></div>
         </div>
-        <div class="faq__item">
-          <button class="faq__q" aria-expanded="false"><span>How quickly can you incorporate a company?</span><i class="faq__icon"></i></button>
+        <div class="faq__item reveal" data-reveal="fade-left" data-delay="180">
+          <button class="faq__q" data-cursor="link" aria-expanded="false">
+            <span>How quickly can you incorporate a company?</span>
+            <i class="faq__icon"></i>
+          </button>
           <div class="faq__a"><p>Once documents and DSCs are ready, incorporation usually takes one to two weeks, depending on MCA processing. PAN and TAN are issued with the certificate of incorporation.</p></div>
         </div>
-        <div class="faq__item">
-          <button class="faq__q" aria-expanded="false"><span>Are your fees fixed or hourly?</span><i class="faq__icon"></i></button>
+        <div class="faq__item reveal" data-reveal="fade-left" data-delay="240">
+          <button class="faq__q" data-cursor="link" aria-expanded="false">
+            <span>Are your fees fixed or hourly?</span>
+            <i class="faq__icon"></i>
+          </button>
           <div class="faq__a"><p>Monthly work is billed as a fixed retainer. One-time work — incorporation, audits, notice replies — is quoted as a fixed fee before we start.</p></div>
         </div>
-        <div class="faq__item">
-          <button class="faq__q" aria-expanded="false"><span>Do we need to visit your office in Noida?</span><i class="faq__icon"></i></button>
+        <div class="faq__item reveal" data-reveal="fade-left" data-delay="300">
+          <button class="faq__q" data-cursor="link" aria-expanded="false">
+            <span>Do we need to visit your office in Noida?</span>
+            <i class="faq__icon"></i>
+          </button>
           <div class="faq__a"><p>No. Most work is done online, with documents shared over email or a shared folder and reviews on call. You are welcome to meet us at the Sector 63 office.</p></div>
         </div>
-        <div class="faq__item">
-          <button class="faq__q" aria-expanded="false"><span>Do you carry out statutory audit and tax audit?</span><i class="faq__icon"></i></button>
+        <div class="faq__item reveal" data-reveal="fade-left" data-delay="360">
+          <button class="faq__q" data-cursor="link" aria-expanded="false">
+            <span>Do you carry out statutory audit and tax audit?</span>
+            <i class="faq__icon"></i>
+          </button>
           <div class="faq__a"><p>Statutory audit under the Companies Act and tax audit under the Income-tax Act are signed by a practising Chartered Accountant. We prepare the accounts and audit schedules and work with your auditor. Cost audit is carried out by a Cost Accountant in practice.</p></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ============================== INSIGHTS ============================== -->
-  <section class="section" id="insights">
+  <!-- ============================================================= -->
+  <!-- BLOG / INSIGHTS -->
+  <!-- ============================================================= -->
+  <section class="section insights" id="insights">
     <div class="container">
-      <div class="section__head reveal">
-        <div>
-          <p class="eyebrow">Insights</p>
-          <h2 class="section__title">Recent articles</h2>
-        </div>
-        <p class="section__lede">Short notes on tax, GST, company law and audit — what applies, by when, and what it costs to miss.</p>
+      <div class="section__head">
+        <span class="eyebrow reveal" data-reveal="fade-up">Insights</span>
+        <h2 class="section__title reveal" data-reveal="fade-up" data-delay="80">
+          Recent <span class="grad">articles</span>
+        </h2>
+        <p class="section__lede reveal" data-reveal="fade-up" data-delay="160">
+          Short notes on tax, GST, company law and audit — what applies, by when, and what it costs to miss.
+        </p>
       </div>
 
-      <div class="articles reveal">
-        <article class="article-item">
-          <p class="article-item__meta"><span>GST</span>September 2026</p>
-          <h3><a href="blog/gstr-2b-reconciliation-ims/">Reconciling GSTR-2B when your books and the portal disagree</a></h3>
+      <div class="insights__grid">
+        <article class="post tilt reveal" data-tilt data-reveal="fade-up" data-delay="0" data-cursor="card">
+          <div class="post__tag">GST</div>
+          <div class="post__date">Sep 2026</div>
+          <h3><a href="blog/gstr-2b-reconciliation-ims/" data-cursor="link">Reconciling GSTR-2B when your books and the portal disagree</a></h3>
           <p>A practical walk-through of period mismatches, and why forcing an invoice-level match is usually the wrong move.</p>
+          <a href="blog/gstr-2b-reconciliation-ims/" class="post__link" data-cursor="link">Read article →</a>
         </article>
-        <article class="article-item">
-          <p class="article-item__meta"><span>Audit</span>October 2026</p>
-          <h3><a href="blog/cost-audit-cra-2-cra-4-fy-2025-26/">Cost audit for FY 2025-26: applicability and the CRA-2 and CRA-4 deadlines</a></h3>
+        <article class="post tilt reveal" data-tilt data-reveal="fade-up" data-delay="100" data-cursor="card">
+          <div class="post__tag">Audit</div>
+          <div class="post__date">Oct 2026</div>
+          <h3><a href="blog/cost-audit-cra-2-cra-4-fy-2025-26/" data-cursor="link">Cost audit for FY 2025-26: applicability and the CRA-2 and CRA-4 deadlines</a></h3>
           <p>Rule 3 and Rule 4 thresholds, who is exempt, and the 180-day and 30-day filing timelines.</p>
+          <a href="blog/cost-audit-cra-2-cra-4-fy-2025-26/" class="post__link" data-cursor="link">Read article →</a>
         </article>
-        <article class="article-item">
-          <p class="article-item__meta"><span>Audit</span>October 2026</p>
-          <h3><a href="blog/internal-audit-section-138-applicability/">Internal audit under Section 138: who needs it</a></h3>
+        <article class="post tilt reveal" data-tilt data-reveal="fade-up" data-delay="200" data-cursor="card">
+          <div class="post__tag">Audit</div>
+          <div class="post__date">Oct 2026</div>
+          <h3><a href="blog/internal-audit-section-138-applicability/" data-cursor="link">Internal audit under Section 138: who needs it</a></h3>
           <p>The ₹200 crore turnover and ₹100 crore borrowing tests, who can be appointed, and CARO clause 3(xiv).</p>
+          <a href="blog/internal-audit-section-138-applicability/" class="post__link" data-cursor="link">Read article →</a>
         </article>
       </div>
-      <p class="articles__more"><a href="blog/" class="text-link">All articles</a></p>
+
+      <div style="text-align:center;margin-top:2.6rem">
+        <a href="blog/" class="btn btn--ghost" data-cursor="link"><span>All articles →</span></a>
+      </div>
     </div>
   </section>
 
-  <!-- ============================== CTA ============================== -->
+  <!-- ============================================================= -->
+  <!-- CTA -->
+  <!-- ============================================================= -->
   <section class="cta-band" id="cta">
-    <div class="container cta-band__inner">
-      <div>
+    <div class="container">
+      <div class="cta-band__inner reveal" data-reveal="scale">
+        <div class="cta-band__glow"></div>
         <h2>Have a pending return, notice or filing?</h2>
         <p>Send us the details. In a 30-minute call we will tell you what is due, what it involves and what our fee would be. The first consultation is free.</p>
-      </div>
-      <div class="cta-band__actions">
-        <a href="#contact" class="btn btn--primary btn--lg">Book a Consultation</a>
-        <a href="tel:+919315639676" class="btn btn--light btn--lg">Call 93156 39676</a>
+        <div class="cta-band__actions">
+          <a href="#contact" class="btn btn--primary btn--lg magnetic" data-cursor="button"><span>Book a Consultation</span></a>
+          <a href="tel:+919315639676" class="btn btn--ghost btn--lg" data-cursor="button"><span>Call 9315639676</span></a>
+        </div>
       </div>
     </div>
   </section>
 
-  <!-- ============================== CONTACT ============================== -->
-  <section class="section section--white" id="contact">
+  <!-- ============================================================= -->
+  <!-- CONTACT -->
+  <!-- ============================================================= -->
+  <section class="section contact" id="contact">
     <div class="container contact__grid">
-      <div class="contact__info reveal">
-        <p class="eyebrow">Contact</p>
-        <h2 class="section__title">Discuss your requirement</h2>
-        <p class="section__lede">Share a few details about the work you need. We usually reply within one working day.</p>
+      <div class="contact__info">
+        <span class="eyebrow reveal" data-reveal="fade-right">Contact</span>
+        <h2 class="section__title reveal" data-reveal="fade-right" data-delay="80">
+          Discuss your <span class="grad">requirement</span>
+        </h2>
+        <p class="section__lede reveal" data-reveal="fade-right" data-delay="160">
+          Share a few details about the work you need. We usually reply within one working day.
+        </p>
 
-        <dl class="contact__list">
-          <div><dt>Phone</dt><dd><a href="tel:+919315639676">+91 93156 39676</a></dd></div>
-          <div><dt>Email</dt><dd><a href="mailto:rudrajha0107@gmail.com">rudrajha0107@gmail.com</a></dd></div>
-          <div><dt>Office</dt><dd>Suite 103, H-36, H Block, Sector 63,<br />Noida, Uttar Pradesh 201301<br /><a href="https://www.google.com/maps/search/?api=1&amp;query=Suite+103%2C+H-36%2C+H+Block%2C+Sector+63%2C+Noida%2C+Uttar+Pradesh+201301" target="_blank" rel="noopener">Get directions</a></dd></div>
-        </dl>
+        <ul class="contact__list">
+          <li class="reveal" data-reveal="fade-right" data-delay="220" data-cursor="card">
+            <span class="contact__ico"><svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M6.6 10.8a15.5 15.5 0 006.6 6.6l2.2-2.2a1 1 0 011-.24 11.4 11.4 0 003.6.58 1 1 0 011 1V20a1 1 0 01-1 1A17 17 0 013 4a1 1 0 011-1h3.5a1 1 0 011 1 11.4 11.4 0 00.58 3.6 1 1 0 01-.24 1z"/></svg></span>
+            <div><small>Phone</small><a href="tel:+919315639676" data-cursor="link">+91 93156 39676</a></div>
+          </li>
+          <li class="reveal" data-reveal="fade-right" data-delay="280" data-cursor="card">
+            <span class="contact__ico"><svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M2 4h20v16H2zm10 7L3 5v14h18V5z"/></svg></span>
+            <div><small>Email</small><a href="mailto:rudrajha0107@gmail.com" data-cursor="link">rudrajha0107@gmail.com</a></div>
+          </li>
+          <li class="reveal" data-reveal="fade-right" data-delay="340" data-cursor="card">
+            <span class="contact__ico"><svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 2a7 7 0 017 7c0 5-7 13-7 13S5 14 5 9a7 7 0 017-7zm0 9.5A2.5 2.5 0 1012 6a2.5 2.5 0 000 5.5z"/></svg></span>
+            <div><small>Office</small><a href="https://www.google.com/maps/search/?api=1&amp;query=Suite+103%2C+H-36%2C+H+Block%2C+Sector+63%2C+Noida%2C+Uttar+Pradesh+201301" target="_blank" rel="noopener" data-cursor="link">Suite 103, H-36, H Block, Sector 63, Noida, Uttar Pradesh 201301</a></div>
+          </li>
+        </ul>
       </div>
 
-      <form class="contact__form" id="contactForm" novalidate>
+      <form class="contact__form reveal" data-reveal="fade-left" id="contactForm" novalidate>
         <div class="field">
           <input type="text" id="cf-name" name="name" placeholder=" " required />
           <label for="cf-name">Full name</label>
@@ -619,7 +957,7 @@
         </div>
         <div class="field">
           <select id="cf-service" name="service" required>
-            <option value="" disabled selected>Select a service</option>
+            <option value="" disabled selected></option>
             <option>Income Tax</option>
             <option>GST</option>
             <option>TDS</option>
@@ -638,56 +976,70 @@
           <label for="cf-message">Briefly describe your requirement</label>
           <span class="field__err" data-err="message"></span>
         </div>
-        <button type="submit" class="btn btn--primary btn--block btn--lg">
+        <button type="submit" class="btn btn--primary btn--block btn--lg magnetic" data-cursor="button">
           <span id="submitText">Send enquiry</span>
         </button>
         <p class="contact__note" id="formNote" role="status"></p>
       </form>
     </div>
+
+    <!-- MAP PLACEHOLDER -->
+    <div class="container">
+      <div class="map reveal" data-reveal="fade-up" data-cursor="card">
+        <div class="map__overlay">
+          <div class="map__pin">
+            <svg viewBox="0 0 24 24" width="28" height="28"><path fill="currentColor" d="M12 2a7 7 0 017 7c0 5-7 13-7 13S5 14 5 9a7 7 0 017-7zm0 9.5A2.5 2.5 0 1012 6a2.5 2.5 0 000 5.5z"/></svg>
+          </div>
+          <strong>Vitt-Marg Advisors</strong>
+          <span>Suite 103, H-36, Sector 63, Noida · <a href="https://www.google.com/maps/search/?api=1&amp;query=Suite+103%2C+H-36%2C+H+Block%2C+Sector+63%2C+Noida%2C+Uttar+Pradesh+201301" target="_blank" rel="noopener" data-cursor="link" style="color:var(--primary);text-decoration:underline">Get directions</a></span>
+        </div>
+        <div class="map__grid"></div>
+      </div>
+    </div>
   </section>
 
-  </main>
-
-  <!-- ============================== FOOTER ============================== -->
+  <!-- ============================================================= -->
+  <!-- FOOTER -->
+  <!-- ============================================================= -->
   <footer class="footer" id="footer">
     <div class="container footer__grid">
       <div class="footer__brand">
-        <a href="#top" class="nav__brand">
-          <img src="Assets/logo.jpg" alt="Vitt-Marg Advisors logo" class="nav__logo" width="40" height="40" />
+        <a href="#top" class="nav__brand" data-cursor="link">
+          <img src="Assets/logo.jpg" alt="Vitt-Marg Advisors logo" class="nav__logo" width="44" height="44" />
           <span class="nav__brand-text"><strong>Vitt-Marg</strong><em>Advisors</em></span>
         </a>
         <p>A CMA-led practice in Noida for income tax, GST, ROC compliance, accounting, and cost and internal audit.</p>
-        <p class="footer__social">
-          <a href="#" aria-label="LinkedIn">LinkedIn</a>
-          <a href="#" aria-label="X (Twitter)">X</a>
-          <a href="#" aria-label="Instagram">Instagram</a>
-        </p>
+        <div class="footer__social">
+          <a href="#" data-cursor="link" aria-label="LinkedIn"><svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M4 4a2 2 0 110 4 2 2 0 010-4zM3 9h2v12H3zm5 0h2v2a3 3 0 013-2c3 0 4 2 4 5v7h-2v-6c0-2-.7-3-2-3s-3 1-3 3v6H8z"/></svg></a>
+          <a href="#" data-cursor="link" aria-label="Twitter"><svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M22 6a8 8 0 01-2.3.6A4 4 0 0021.4 4a8 8 0 01-2.5 1A4 4 0 0012 8.5a11 11 0 01-8-4 4 4 0 001.2 5.3A4 4 0 013 9v.1a4 4 0 003 3.9 4 4 0 01-1.8.1 4 4 0 003.7 2.8A8 8 0 012 18a11 11 0 006 1.8c7.2 0 11-6 11-11v-.5A8 8 0 0022 6z"/></svg></a>
+          <a href="#" data-cursor="link" aria-label="Instagram"><svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M12 2c2.7 0 3 0 4.1.1 1 0 1.7.2 2.3.5.6.2 1 .5 1.5 1s.8.9 1 1.5c.3.6.4 1.3.5 2.3.1 1.1.1 1.4.1 4.1s0 3-.1 4.1c0 1-.2 1.7-.5 2.3-.2.6-.5 1-1 1.5s-.9.8-1.5 1c-.6.3-1.3.4-2.3.5-1.1.1-1.4.1-4.1.1s-3 0-4.1-.1c-1 0-1.7-.2-2.3-.5-.6-.2-1-.5-1.5-1s-.8-.9-1-1.5c-.3-.6-.4-1.3-.5-2.3C2 15 2 14.7 2 12s0-3 .1-4.1c0-1 .2-1.7.5-2.3.2-.6.5-1 1-1.5s.9-.8 1.5-1c.6-.3 1.3-.4 2.3-.5C9 2 9.3 2 12 2zm0 5a5 5 0 100 10 5 5 0 000-10zm0 8.2a3.2 3.2 0 110-6.4 3.2 3.2 0 010 6.4zM17.5 6a1.2 1.2 0 100 2.4 1.2 1.2 0 000-2.4z"/></svg></a>
+        </div>
       </div>
 
       <div class="footer__col">
         <h4>Services</h4>
-        <a href="itr-filing-noida/">Income Tax Returns</a>
-        <a href="gst-registration-noida/">GST Registration</a>
-        <a href="roc-compliance-noida/">ROC Compliance</a>
-        <a href="company-registration-noida/">Company Registration</a>
-        <a href="blog/cost-audit-cra-2-cra-4-fy-2025-26/">Cost &amp; Internal Audit</a>
-        <a href="income-tax/">Tax Calculator</a>
+        <a href="itr-filing-noida/" data-cursor="link">Income Tax Returns</a>
+        <a href="gst-registration-noida/" data-cursor="link">GST Registration</a>
+        <a href="roc-compliance-noida/" data-cursor="link">ROC Compliance</a>
+        <a href="company-registration-noida/" data-cursor="link">Company Registration</a>
+        <a href="blog/cost-audit-cra-2-cra-4-fy-2025-26/" data-cursor="link">Cost &amp; Internal Audit</a>
+        <a href="#services" data-cursor="link">Virtual CFO</a>
       </div>
 
       <div class="footer__col">
-        <h4>Firm</h4>
-        <a href="#why">How We Work</a>
-        <a href="#team">Leadership</a>
-        <a href="#pricing">Fees</a>
-        <a href="blog/">Insights</a>
-        <a href="#contact">Contact</a>
+        <h4>Company</h4>
+        <a href="#why" data-cursor="link">How We Work</a>
+        <a href="#process" data-cursor="link">Our Process</a>
+        <a href="#team" data-cursor="link">Leadership</a>
+        <a href="#pricing" data-cursor="link">Pricing</a>
+        <a href="blog/" data-cursor="link">Insights</a>
       </div>
 
       <div class="footer__col footer__contact">
-        <h4>Office</h4>
-        <p>Suite 103, H-36, H Block,<br />Sector 63, Noida,<br />Uttar Pradesh 201301</p>
-        <a href="tel:+919315639676">+91 93156 39676</a>
-        <a href="mailto:rudrajha0107@gmail.com">rudrajha0107@gmail.com</a>
+        <h4>Contact</h4>
+        <a href="tel:+919315639676" data-cursor="link">+91 93156 39676</a>
+        <a href="mailto:rudrajha0107@gmail.com" data-cursor="link">rudrajha0107@gmail.com</a>
+        <a href="https://www.google.com/maps/search/?api=1&amp;query=Suite+103%2C+H-36%2C+H+Block%2C+Sector+63%2C+Noida%2C+Uttar+Pradesh+201301" target="_blank" rel="noopener" data-cursor="link"><svg viewBox="0 0 24 24" width="13" height="13" aria-hidden="true" style="vertical-align:-2px;margin-right:.3rem"><path fill="currentColor" d="M12 2a7 7 0 00-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 00-7-7zm0 9.5A2.5 2.5 0 1112 6.5a2.5 2.5 0 010 5z"/></svg>Suite 103, H-36, H Block, Sector 63, Noida, Uttar Pradesh 201301</a>
       </div>
     </div>
 
@@ -695,18 +1047,19 @@
       <div class="container footer__bar-inner">
         <p>© <span id="year">2026</span> Vitt-Marg Advisors. All rights reserved.</p>
         <div class="footer__legal">
-          <a href="#">Privacy</a>
-          <a href="#">Terms</a>
-          <a href="#">Disclaimer</a>
+          <a href="#" data-cursor="link">Privacy</a>
+          <a href="#" data-cursor="link">Terms</a>
+          <a href="#" data-cursor="link">Disclaimer</a>
         </div>
       </div>
     </div>
   </footer>
 
-  <button class="to-top" id="toTop" aria-label="Back to top">
-    <svg viewBox="0 0 24 24" width="18" height="18" aria-hidden="true"><path fill="currentColor" d="M12 5l7 7-1.4 1.4L13 8.8V20h-2V8.8l-4.6 4.6L5 12z"/></svg>
+  <!-- BACK TO TOP -->
+  <button class="to-top" id="toTop" aria-label="Back to top" data-cursor="button">
+    <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 5l7 7-1.4 1.4L13 8.8V20h-2V8.8l-4.6 4.6L5 12z"/></svg>
   </button>
 
-  <script src="script.js"></script>
+  <script src="script.js?v=20261003r"></script>
 </body>
 </html>

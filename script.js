@@ -219,7 +219,6 @@ function initNav() {
       menu.classList.contains('is-open') ? closeMenu() : openMenu();
     });
     links.forEach(l => l.addEventListener('click', closeMenu));
-    $$('.nav__menu-cta').forEach(l => l.addEventListener('click', closeMenu));
     document.addEventListener('click', e => {
       if (menu.classList.contains('is-open') &&
           !menu.contains(e.target) && !burger.contains(e.target)) closeMenu();
@@ -1348,7 +1347,6 @@ window.addEventListener('load', () => {
   /* ---------- input formatting ---------- */
   function taxAttachFormat(id) {
     var input = taxEl(id);
-    if (!input) return;
     input.addEventListener('input', function () {
       var atEnd = input.selectionStart === input.value.length;
       if (input.value.trim() === '') return;
@@ -1395,7 +1393,6 @@ window.addEventListener('load', () => {
 
   /* ---------- boot ---------- */
   function taxBoot() {
-    if (!taxEl('taxBtnCalc')) return; // calculator not on this page
     ['taxSalary', 'taxHouse', 'taxBusiness', 'taxCapital', 'taxOther', 'tax80C', 'tax80CCD', 'tax80D', 'taxLoan', 'taxHRA', 'taxPtax'].forEach(taxAttachFormat);
 
     document.querySelectorAll('input[name="taxSalaried"]').forEach(function (r) { r.addEventListener('change', function () { taxSalaried = this.value === 'yes'; }); });

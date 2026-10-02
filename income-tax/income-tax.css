@@ -9,38 +9,38 @@
 
 /* ---- scoped design tokens (namespaced) ---- */
 .vmtax-root {
-  --vmtax-bg:        #FFFFFF;
-  --vmtax-bg-2:      #F3F7FE;
-  --vmtax-bg-3:      #E7EFFD;
+  --vmtax-bg:        #F8FAFC;
+  --vmtax-bg-2:      #F1F5F9;
+  --vmtax-bg-3:      #EFF6FF;
   --vmtax-primary:   #2563EB;
   --vmtax-primary-d: #1D4ED8;
-  --vmtax-accent:    #0369A1;
-  --vmtax-accent-2:  #60A5FA;
+  --vmtax-accent:    #2563EB;
+  --vmtax-accent-2:  #93C5FD;
   --vmtax-gold:      #1D4ED8;
-  --vmtax-gold-2:    #1D4ED8;
+  --vmtax-gold-2:    #64748B;
   --vmtax-green:     #15803D;
-  --vmtax-text:      #0B1F44;
-  --vmtax-soft:      #33476B;
-  --vmtax-mut:       #556684;
+  --vmtax-text:      #111827;
+  --vmtax-soft:      #334155;
+  --vmtax-mut:       #64748B;
   --vmtax-faint:     #64748B;
   --vmtax-glass:     #FFFFFF;
-  --vmtax-glass-2:   #F5F8FF;
-  --vmtax-stroke:    rgba(30,64,175,0.12);
-  --vmtax-stroke-2:  rgba(30,64,175,0.20);
-  --vmtax-grad:      linear-gradient(135deg, #2563EB 0%, #1D4ED8 55%, #1E3A8A 100%);
-  --vmtax-grad-gold: linear-gradient(135deg, #3B82F6, #1D4ED8);
-  --vmtax-grad-text: linear-gradient(120deg, #1E3A8A 0%, #1D4ED8 40%, #2563EB 70%, #0369A1 100%);
-  --vmtax-grad-line: linear-gradient(90deg, transparent, #2563EB, transparent);
-  --vmtax-sh-md:     0 12px 40px rgba(15,40,90,.10);
-  --vmtax-sh-lg:     0 30px 80px rgba(15,40,90,.14);
-  --vmtax-sh-glow:   0 0 0 1px rgba(30,64,175,.12), 0 20px 60px -20px rgba(37,99,235,.35);
-  --vmtax-r-sm: 12px; --vmtax-r-md: 18px; --vmtax-r-lg: 26px; --vmtax-r-xl: 34px; --vmtax-r-pill: 999px;
-  --vmtax-font-display: 'Fraunces', Georgia, serif;
-  --vmtax-font-body:    'Sora', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
-  --vmtax-font-mono:    'JetBrains Mono', ui-monospace, Menlo, monospace;
+  --vmtax-glass-2:   #FFFFFF;
+  --vmtax-stroke:    #E2E8F0;
+  --vmtax-stroke-2:  #CBD5E1;
+  --vmtax-grad:      linear-gradient(#2563EB, #2563EB);
+  --vmtax-grad-gold: linear-gradient(#2563EB, #2563EB);
+  --vmtax-grad-text: linear-gradient(#0B1220, #0B1220);
+  --vmtax-grad-line: linear-gradient(90deg, #E2E8F0, #E2E8F0);
+  --vmtax-sh-md:     0 1px 2px rgba(11,18,32,.04);
+  --vmtax-sh-lg:     0 1px 2px rgba(11,18,32,.04), 0 8px 24px rgba(11,18,32,.05);
+  --vmtax-sh-glow:   0 1px 2px rgba(11,18,32,.04);
+  --vmtax-r-sm: 6px; --vmtax-r-md: 8px; --vmtax-r-lg: 8px; --vmtax-r-xl: 10px; --vmtax-r-pill: 6px;
+  --vmtax-font-display: 'Manrope', 'Inter', system-ui, sans-serif;
+  --vmtax-font-body:    'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --vmtax-font-mono:    'Inter', system-ui, sans-serif;
   --vmtax-ease: cubic-bezier(.22,1,.36,1);
-  --vmtax-container: 1200px;
-  --vmtax-gutter: clamp(1.1rem, 4vw, 2.2rem);
+  --vmtax-container: 1180px;
+  --vmtax-gutter: clamp(16px, 4vw, 32px);
 }
 
 /* ---- reset scoped to module ---- */
@@ -429,3 +429,18 @@
 .vmtax-root .vmtax-btn--gold    { color: #fff; background: var(--vmtax-grad-gold); }
 .vmtax-root .vmtax-btn--ghost   { color: var(--vmtax-text); background: var(--vmtax-glass); border: 1px solid var(--vmtax-stroke-2); }
 .vmtax-root .vmtax-btn--ghost:hover { color: #fff; border-color: transparent; }
+
+
+/* ---- design system v2 (Oct 2026): calm, flat, consistent with main site ---- */
+.vmtax-atmosphere { display: none !important; }
+.vmtax-root h1, .vmtax-root h2, .vmtax-root h3, .vmtax-root h4 { font-weight: 600; letter-spacing: -.015em; }
+.vmtax-hero h1 { font-weight: 700; font-size: clamp(30px, 3.6vw, 44px); color: #0B1220; }
+.vmtax-grad { background: none !important; -webkit-text-fill-color: currentColor !important; color: inherit; }
+.vmtax-eyebrow, .vmtax-root [class*="eyebrow"] { letter-spacing: .06em !important; font-weight: 500; }
+.vmtax-brand__logo { width: 36px; height: 36px; border-radius: 6px; border: 1px solid #E2E8F0; object-fit: cover; background: #fff; }
+.vmtax-brand__text strong { font-weight: 700; }
+.vmtax-btn--primary, .vmtax-btn--gold { box-shadow: none !important; }
+.vmtax-btn--primary:hover, .vmtax-btn--gold:hover { transform: none !important; background: #1D4ED8 !important; }
+.vmtax-reshero { background: #F8FAFC !important; border-color: #E2E8F0 !important; }
+.vmtax-eyebrow { border: 0 !important; padding: 0 !important; color: #64748B !important; font-size: 13px !important; }
+.vmtax-eyebrow::before { width: 20px !important; height: 1px !important; border-radius: 0 !important; background: #C9A227 !important; box-shadow: none !important; }

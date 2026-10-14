@@ -1,0 +1,47 @@
+
+    <section class="svc-hero">
+      <div class="container">
+        <nav class="crumbs" aria-label="Breadcrumb"><a href="../">Home</a><span>/</span><span>Company search</span></nav>
+        <span class="eyebrow">Free tool · Noida, Greater Noida &amp; Ghaziabad</span>
+        <h1>Company Search by Name or CIN</h1>
+        <p class="svc-hero__lede">Find any company or LLP registered in Noida, Greater Noida or Ghaziabad. See its CIN, status, date of incorporation, registered office address and capital, as per Ministry of Corporate Affairs records.</p>
+      </div>
+    </section>
+    <div class="container svc-layout">
+      <article class="prose">
+        <form class="co-search" role="search" onsubmit="return false">
+          <label for="q" class="sr-only" style="position:absolute;left:-9999px">Company name or CIN</label>
+          <input id="q" type="search" placeholder="Type company name or CIN, e.g. U74999UP2020PTC..." autocomplete="off" autofocus />
+        </form>
+        <p class="co-meta" id="meta">{{COUNT}} companies · data as of {{ASOF}}</p>
+        <ul class="co-results" id="res"></ul>
+        <p class="note">Source: Ministry of Corporate Affairs company master data (data.gov.in). Vitt-Marg Advisors is not affiliated with MCA. Details may change after the data date; verify on the MCA portal before relying on them. Correction or removal requests: rudrajha0107@gmail.com.</p>
+      </article>
+      <aside class="svc-aside">
+        <div class="svc-card-box">
+          <h3>Need ROC or GST help?</h3>
+          <p>AOC-4, MGT-7, DIR-3 KYC, GST returns, TDS and audits for companies in Noida and Ghaziabad.</p>
+          <a href="../roc-compliance-noida/" class="btn btn--primary"><span>ROC compliance</span></a>
+          <a href="tel:+919315639676" class="btn btn--ghost"><span>Call 9315639676</span></a>
+        </div>
+      </aside>
+    </div>
+    <script>
+    (function(){
+      var data=[],q=document.getElementById('q'),res=document.getElementById('res'),meta=document.getElementById('meta'),base=meta.textContent;
+      function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
+      function show(list,total){
+        res.innerHTML=list.map(function(r){return '<li><a href="'+esc(r[2])+'/">'+esc(r[0])+'</a><small>'+esc(r[1])+' · '+esc(r[3])+(r[4]?' · '+esc(r[4]):'')+'</small></li>';}).join('');
+        meta.textContent=q.value.trim()?(total+' match'+(total==1?'':'es')+(total>list.length?' - showing first '+list.length:'')):base;
+      }
+      function run(){
+        var t=q.value.trim().toUpperCase();
+        if(t.length<2){show(data.slice(0,30),data.length);return;}
+        var words=t.split(/\s+/),out=[];
+        for(var i=0;i<data.length;i++){var r=data[i],h=r[0]+' '+r[1];var ok=true;for(var j=0;j<words.length;j++){if(h.indexOf(words[j])<0){ok=false;break;}}if(ok)out.push(r);}
+        show(out.slice(0,50),out.length);
+      }
+      fetch('index.json').then(function(r){return r.json();}).then(function(d){data=d;run();});
+      var tm;q.addEventListener('input',function(){clearTimeout(tm);tm=setTimeout(run,120);});
+    })();
+    </script>

@@ -767,17 +767,21 @@ function initContactForm() {
 
     note.textContent = '';
     note.className = 'contact__note';
-    const original = submitText ? submitText.textContent : 'Send enquiry';
-    if (submitText) submitText.textContent = 'Sending...';
-
-    setTimeout(() => {
-      if (submitText) submitText.textContent = 'Enquiry sent';
-      note.textContent = 'Thanks - a principal will reply within one working day.';
-      note.className = 'contact__note is-success';
-      form.reset();
-      $$('.field', form).forEach(f => f.classList.remove('is-error'));
-      setTimeout(() => { if (submitText) submitText.textContent = original; }, 3200);
-    }, 1200);
+    // send the enquiry to WhatsApp (the site has no mail server)
+    const val = n => { const el = form.querySelector('[name="' + n + '"]'); return el ? el.value.trim() : ''; };
+    const msg = 'New enquiry from vittmarg.com%0A' +
+      'Name: ' + encodeURIComponent(val('name')) + '%0A' +
+      'Email: ' + encodeURIComponent(val('email')) + '%0A' +
+      'Phone: ' + encodeURIComponent(val('phone')) + '%0A' +
+      'Service: ' + encodeURIComponent(val('service')) + '%0A' +
+      'Message: ' + encodeURIComponent(val('message'));
+    const url = 'https://wa.me/919315639676?text=' + msg;
+    const win = window.open(url, '_blank');
+    if (win) { try { win.opener = null; } catch (err) {} } else { window.location.href = url; }
+    if (submitText) submitText.textContent = 'Opening WhatsApp...';
+    note.textContent = 'WhatsApp is opening with your enquiry. Tap send, and a principal will reply within one working day. Or call 9315639676.';
+    note.className = 'contact__note is-success';
+    setTimeout(() => { if (submitText) submitText.textContent = 'Send enquiry'; form.reset(); }, 2500);
   });
 }
 

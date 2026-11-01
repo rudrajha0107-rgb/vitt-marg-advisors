@@ -91,6 +91,7 @@
     (function(){
       var data=[],q=document.getElementById('q'),res=document.getElementById('res'),meta=document.getElementById('meta'),base=meta.textContent;
       var CITY=['Noida','Greater Noida','Ghaziabad'];
+      try{var qp=new URLSearchParams(location.search).get('q');if(qp)q.value=qp;}catch(e){}
       function slug(r){return r[0].toLowerCase().replace(/[^a-z0-9]+/g,'-').replace(/^-+|-+$/g,'')+'-'+r[1].toLowerCase();}
       function esc(s){return String(s).replace(/[&<>"]/g,function(c){return {'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;'}[c];});}
       function show(list,total){

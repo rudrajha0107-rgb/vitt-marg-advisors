@@ -136,6 +136,7 @@
       <nav class="nav__menu" id="navMenu" aria-label="Primary">
         <a href="#services" class="nav__link" data-cursor="link">Services</a>
         <a href="income-tax/" target="_blank" rel="noopener" class="nav__link" data-cursor="link">Tax Calculator</a>
+        <a href="companies/" class="nav__link" data-cursor="link">Company Search</a>
         <a href="#why" class="nav__link" data-cursor="link">Why Us</a>
         <a href="#process" class="nav__link" data-cursor="link">Process</a>
         <a href="#team" class="nav__link" data-cursor="link">Leadership</a>
@@ -272,6 +273,37 @@
         <div class="trust__item reveal" data-reveal="fade-up" data-delay="240">Startup India</div>
         <div class="trust__item reveal" data-reveal="fade-up" data-delay="300">MSME Udyam</div>
       </div>
+    </div>
+  </section>
+
+  <!-- ============================================================= -->
+  <!-- COMPANY SEARCH -->
+  <!-- ============================================================= -->
+  <section class="section cosearch" id="company-search">
+    <style>
+      .cosearch__box{max-width:760px;margin:1.6rem auto 0;display:flex;gap:.6rem;flex-wrap:wrap}
+      .cosearch__box input{flex:1 1 320px;min-width:0;font:inherit;font-size:1.05rem;padding:.95rem 1.2rem;border:1px solid var(--stroke-2,#d6dce8);border-radius:999px;background:#fff}
+      .cosearch__box input:focus{outline:2px solid var(--primary,#2F5BEA);outline-offset:1px}
+      .cosearch__note{text-align:center;margin-top:.9rem;font-size:.92rem;color:var(--text-mut,#6b7690)}
+      .cosearch__note a{font-weight:600}
+    </style>
+    <div class="container">
+      <div class="section__head">
+        <span class="eyebrow reveal" data-reveal="fade-up">Free tool</span>
+        <h2 class="section__title reveal" data-reveal="fade-up" data-delay="80">
+          Search any company in <span class="grad">Noida, Greater Noida &amp; Ghaziabad</span>
+        </h2>
+        <p class="section__lede reveal" data-reveal="fade-up" data-delay="160">
+          Type a company name or CIN to see its status, date of incorporation, registered office address
+          and capital, as per Ministry of Corporate Affairs records. Over 75,000 active companies are listed.
+        </p>
+      </div>
+      <form class="cosearch__box reveal" data-reveal="fade-up" data-delay="200" action="companies/" method="get" role="search">
+        <label for="coq" style="position:absolute;left:-9999px">Company name or CIN</label>
+        <input id="coq" name="q" type="search" placeholder="Company name or CIN, e.g. U74999UP2020PTC..." autocomplete="off" />
+        <button type="submit" class="btn btn--primary magnetic" data-cursor="button"><span>Search</span></button>
+      </form>
+      <p class="cosearch__note">Source: MCA company master data (data.gov.in). <a href="companies/">Open company search</a></p>
     </div>
   </section>
 

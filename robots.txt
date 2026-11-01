@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://vittmarg.com/sitemap.xml
+Sitemap: https://vittmarg.com/sitemap-companies.xml

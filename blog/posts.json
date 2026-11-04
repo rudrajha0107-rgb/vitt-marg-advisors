@@ -1,5 +1,54 @@
 [
   {
+    "slug": "roc-compliance-calendar-2026-27",
+    "tag": "ROC",
+    "date": "November 2026",
+    "title": "ROC compliance calendar 2026-27: every MCA due date for companies and LLPs",
+    "summary": "AOC-4, MGT-7, ADT-1, DPT-3, MSME-1, DIR-3 KYC, CRA-2, CRA-4 and LLP Form 8 and 11: every ROC due date in one table, including the November 2026 extensions."
+  },
+  {
+    "slug": "aoc-4-mgt-7-late-fee-penalty-2026",
+    "tag": "ROC",
+    "date": "November 2026",
+    "title": "AOC-4 and MGT-7 late fee in 2026: what it costs if you miss 31 December or 31 January",
+    "summary": "The extension waives the fee only till 31 December (AOC-4) and 31 January (MGT-7). After that, ₹100 a day per form, counted from the original due date. A worked example and the penalties on top."
+  },
+  {
+    "slug": "cra-1-cra-2-cra-3-cra-4-explained",
+    "tag": "Cost Audit",
+    "date": "November 2026",
+    "title": "CRA-1, CRA-2, CRA-3 and CRA-4: the four cost audit forms, in plain English",
+    "summary": "CRA-1 is a format, CRA-3 goes to your Board, and only CRA-2 and CRA-4 reach the MCA. Who prepares each one, who files it, and the FY 2025-26 and 2026-27 due dates."
+  },
+  {
+    "slug": "adt-1-due-date-late-fee",
+    "tag": "ROC",
+    "date": "November 2026",
+    "title": "ADT-1: due date, late fee and checklist for filing your auditor's appointment",
+    "summary": "ADT-1 is due 15 days after the AGM, so 15 October 2026 for most companies. The five-year appointment rule, first auditors, casual vacancies, documents and the late fee slabs."
+  },
+  {
+    "slug": "tax-audit-missed-21-october-2026-penalty",
+    "tag": "Income Tax",
+    "date": "November 2026",
+    "title": "Missed the tax audit date of 21 October 2026? The penalty, the defence and what to do now",
+    "summary": "CBDT extended the FY 2025-26 tax audit date to 21 October 2026. If yours is still pending: the 271B penalty, how Section 273B helps, and why the 21 November ITR date matters more now."
+  },
+  {
+    "slug": "llp-form-8-form-11-due-date-late-fee",
+    "tag": "ROC",
+    "date": "November 2026",
+    "title": "LLP Form 8 and Form 11 for FY 2025-26: due dates, late fee and what to do if you've missed them",
+    "summary": "Form 11 was due 30 May and Form 8 on 30 October 2026, and the MCA's 2026 company relief does not cover LLPs. Who files, who certifies, and how the late fee grows with every month."
+  },
+  {
+    "slug": "dir-3-kyc-new-rules-2026",
+    "tag": "ROC",
+    "date": "November 2026",
+    "title": "DIR-3 KYC in 2026: it is no longer every year. Here's when yours is due",
+    "summary": "From 31 March 2026, director KYC is due once every three years by 30 June, not every September. When your next filing falls, the 30-day rule for changes, and how to fix a deactivated DIN."
+  },
+  {
     "slug": "gold-price-today-india-forecast-2027",
     "tag": "Markets",
     "date": "October 2026",

@@ -1,0 +1,188 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Vitt-Marg Advisors//Compliance Calendar//EN
+CALSCALE:GREGORIAN
+X-WR-CALNAME:Compliance calendar December 2026 (Vitt-Marg)
+BEGIN:VEVENT
+UID:vm-dec26-0@vittmarg.com
+DTSTAMP:20261111T000000Z
+DTSTART;VALUE=DATE:20261207
+DTEND;VALUE=DATE:20261208
+SUMMARY:TDS / TCS: TDS and TCS deposit for November 2026
+DESCRIPTION:Tax deducted or collected in November has to be deposited by 7 December. Late deposit attracts interest at 1.5% a month. Who: All deductors and collectors
+URL:https://vittmarg.com/compliance-calendar/december-2026/
+BEGIN:VALARM
+TRIGGER:-P2D
+ACTION:DISPLAY
+DESCRIPTION:TDS and TCS deposit for November 2026 due in 2 days
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:vm-dec26-1@vittmarg.com
+DTSTAMP:20261111T000000Z
+DTSTART;VALUE=DATE:20261210
+DTEND;VALUE=DATE:20261211
+SUMMARY:GST: GSTR-7 and GSTR-8 for November
+DESCRIPTION:Return of tax deducted at source under GST (GSTR-7) and tax collected by e-commerce operators (GSTR-8). Who: GST TDS deductors and e-commerce operators (TCS)
+URL:https://vittmarg.com/compliance-calendar/december-2026/
+BEGIN:VALARM
+TRIGGER:-P2D
+ACTION:DISPLAY
+DESCRIPTION:GSTR-7 and GSTR-8 for November due in 2 days
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:vm-dec26-2@vittmarg.com
+DTSTAMP:20261111T000000Z
+DTSTART;VALUE=DATE:20261211
+DTEND;VALUE=DATE:20261212
+SUMMARY:GST: GSTR-1 for November (monthly filers)
+DESCRIPTION:Outward supplies for November. Your buyers see these invoices in IMS and GSTR-2B only after you file. Who: Regular taxpayers filing monthly
+URL:https://vittmarg.com/compliance-calendar/december-2026/
+BEGIN:VALARM
+TRIGGER:-P2D
+ACTION:DISPLAY
+DESCRIPTION:GSTR-1 for November (monthly filers) due in 2 days
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:vm-dec26-3@vittmarg.com
+DTSTAMP:20261111T000000Z
+DTSTART;VALUE=DATE:20261213
+DTEND;VALUE=DATE:20261214
+SUMMARY:GST: IFF for November\, GSTR-5 and GSTR-6
+DESCRIPTION:QRMP taxpayers can upload B2B invoices for November in IFF so that buyers get credit without waiting for the quarter. Who: QRMP taxpayers (IFF\, optional)\, non-resident taxpayers and ISDs
+URL:https://vittmarg.com/compliance-calendar/december-2026/
+BEGIN:VALARM
+TRIGGER:-P2D
+ACTION:DISPLAY
+DESCRIPTION:IFF for November\, GSTR-5 and GSTR-6 due in 2 days
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:vm-dec26-4@vittmarg.com
+DTSTAMP:20261111T000000Z
+DTSTART;VALUE=DATE:20261215
+DTEND;VALUE=DATE:20261216
+SUMMARY:Income Tax: Advance tax: third instalment (75%)
+DESCRIPTION:By 15 December\, at least 75% of the estimated tax for tax year 2026-27 should be paid. A shortfall attracts interest at 1% a month. Who: Anyone whose tax for the year\, after TDS\, is ₹10\,000 or more
+URL:https://vittmarg.com/compliance-calendar/december-2026/
+BEGIN:VALARM
+TRIGGER:-P2D
+ACTION:DISPLAY
+DESCRIPTION:Advance tax: third instalment (75%) due in 2 days
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:vm-dec26-5@vittmarg.com
+DTSTAMP:20261111T000000Z
+DTSTART;VALUE=DATE:20261215
+DTEND;VALUE=DATE:20261216
+SUMMARY:PF / ESI: PF (ECR) and ESI contributions for November
+DESCRIPTION:Deposit employee and employer contributions for November wages and file the ECR. Who: Employers registered under EPF and ESI
+URL:https://vittmarg.com/compliance-calendar/december-2026/
+BEGIN:VALARM
+TRIGGER:-P2D
+ACTION:DISPLAY
+DESCRIPTION:PF (ECR) and ESI contributions for November due in 2 days
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:vm-dec26-6@vittmarg.com
+DTSTAMP:20261111T000000Z
+DTSTART;VALUE=DATE:20261220
+DTEND;VALUE=DATE:20261221
+SUMMARY:GST: GSTR-3B for November (monthly filers)
+DESCRIPTION:Summary return and tax payment for November. Late payment attracts interest at 18% a year. Who: Regular taxpayers filing monthly
+URL:https://vittmarg.com/compliance-calendar/december-2026/
+BEGIN:VALARM
+TRIGGER:-P2D
+ACTION:DISPLAY
+DESCRIPTION:GSTR-3B for November (monthly filers) due in 2 days
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:vm-dec26-7@vittmarg.com
+DTSTAMP:20261111T000000Z
+DTSTART;VALUE=DATE:20261225
+DTEND;VALUE=DATE:20261226
+SUMMARY:GST: PMT-06 tax payment for November
+DESCRIPTION:QRMP taxpayers pay the GST for the second month of the quarter by challan PMT-06. Who: QRMP taxpayers
+URL:https://vittmarg.com/compliance-calendar/december-2026/
+BEGIN:VALARM
+TRIGGER:-P2D
+ACTION:DISPLAY
+DESCRIPTION:PMT-06 tax payment for November due in 2 days
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:vm-dec26-8@vittmarg.com
+DTSTAMP:20261111T000000Z
+DTSTART;VALUE=DATE:20261230
+DTEND;VALUE=DATE:20261231
+SUMMARY:TDS / TCS: Form 141 for November deductions
+DESCRIPTION:Challan-cum-statement for TDS deducted in November on these one-time payments (earlier Forms 26QB\, 26QC and 26QD). Who: Individuals who deducted TDS on property purchase\, rent or contract and professional payments
+URL:https://vittmarg.com/compliance-calendar/december-2026/
+BEGIN:VALARM
+TRIGGER:-P2D
+ACTION:DISPLAY
+DESCRIPTION:Form 141 for November deductions due in 2 days
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:vm-dec26-9@vittmarg.com
+DTSTAMP:20261111T000000Z
+DTSTART;VALUE=DATE:20261231
+DTEND;VALUE=DATE:20270101
+SUMMARY:GST: GSTR-9 and GSTR-9C for FY 2025-26
+DESCRIPTION:Annual return and reconciliation statement for FY 2025-26. Late fee applies for every day of delay. Who: GSTR-9: turnover above ₹2 crore. GSTR-9C: above ₹5 crore
+URL:https://vittmarg.com/compliance-calendar/december-2026/
+BEGIN:VALARM
+TRIGGER:-P2D
+ACTION:DISPLAY
+DESCRIPTION:GSTR-9 and GSTR-9C for FY 2025-26 due in 2 days
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:vm-dec26-10@vittmarg.com
+DTSTAMP:20261111T000000Z
+DTSTART;VALUE=DATE:20261231
+DTEND;VALUE=DATE:20270101
+SUMMARY:Income Tax: Belated and revised ITR for FY 2025-26
+DESCRIPTION:Last date for a belated return (late fee ₹1\,000 or ₹5\,000) and for a revised return without any fee. Who: Anyone who has not filed\, or needs to correct\, the FY 2025-26 return
+URL:https://vittmarg.com/compliance-calendar/december-2026/
+BEGIN:VALARM
+TRIGGER:-P2D
+ACTION:DISPLAY
+DESCRIPTION:Belated and revised ITR for FY 2025-26 due in 2 days
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:vm-dec26-11@vittmarg.com
+DTSTAMP:20261111T000000Z
+DTSTART;VALUE=DATE:20261231
+DTEND;VALUE=DATE:20270101
+SUMMARY:ROC / MCA: AOC-4 for FY 2025-26 without additional fee
+DESCRIPTION:MCA General Circular 05/2026 waives the additional fee up to 31 December 2026. After that\, the fee runs from the original due date. Who: Companies that have not filed financial statements
+URL:https://vittmarg.com/compliance-calendar/december-2026/
+BEGIN:VALARM
+TRIGGER:-P2D
+ACTION:DISPLAY
+DESCRIPTION:AOC-4 for FY 2025-26 without additional fee due in 2 days
+END:VALARM
+END:VEVENT
+BEGIN:VEVENT
+UID:vm-dec26-12@vittmarg.com
+DTSTAMP:20261111T000000Z
+DTSTART;VALUE=DATE:20261231
+DTEND;VALUE=DATE:20270101
+SUMMARY:Cost Audit: CRA-4 for FY 2025-26 without additional fee
+DESCRIPTION:MCA General Circular 06/2026 allows the cost audit report to be filed up to 31 December 2026 without additional fee. Who: Companies covered by cost audit
+URL:https://vittmarg.com/compliance-calendar/december-2026/
+BEGIN:VALARM
+TRIGGER:-P2D
+ACTION:DISPLAY
+DESCRIPTION:CRA-4 for FY 2025-26 without additional fee due in 2 days
+END:VALARM
+END:VEVENT
+END:VCALENDAR

@@ -1,3 +1,14 @@
+/* E-mail links are written as data-mail="user|domain" so the address is not plain text in the HTML */
+(function () {
+  function fill() {
+    document.querySelectorAll('[data-mail]').forEach(function (a) {
+      var p = a.getAttribute('data-mail').split('|'), m = p[0] + '@' + p[1];
+      a.setAttribute('href', 'mailto:' + m);
+      var t = a.querySelector('[data-mail-text]'); if (t) t.textContent = m;
+    });
+  }
+  if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', fill); else fill();
+})();
 /* Google Analytics (G-QH4NV2QME2): loaded on every page that includes this file, unless the page already has gtag */
 (function () {
   if (window.gtag) return;

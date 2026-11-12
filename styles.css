@@ -1859,7 +1859,7 @@ p { color: var(--text-soft); }
   background: var(--grad-brand);
   border-color: transparent;
 }
-.footer__col h4 {
+.footer__col h4, .footer__col h3 {
   font-family: var(--font-mono);
   font-size: .74rem;
   letter-spacing: .16em;
@@ -2671,3 +2671,10 @@ body.page-svc a, body.page-svc button, body.page-svc summary { cursor: pointer; 
 
 /* fix: hero heading lines kept a 42px fade-up offset after revealing */
 [data-reveal].is-visible { transform: none; }
+
+/* SEO clean-up: classes that replace inline styles */
+.sr-only { position: absolute; left: -9999px; width: 1px; height: 1px; overflow: hidden; }
+.u-center-cta { text-align: center; margin-top: 2.6rem; }
+.link-underline { color: var(--primary); text-decoration: underline; }
+.footer__addr { font-style: normal; }
+.footer__col h3 { font-family: var(--font-mono); font-size: .74rem; letter-spacing: .16em; text-transform: uppercase; }

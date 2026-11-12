@@ -39,10 +39,12 @@
   <!-- ==================== FONTS ==================== -->
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" media="print" onload="this.media='all'" />
+  <noscript><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet" /></noscript>
 
   <!-- ==================== STYLES ==================== -->
-  <link rel="stylesheet" href="styles.css?v=20261003f" />
+  <link rel="stylesheet" href="styles.css?v=20261113" />
 
   <!-- ==================== SCHEMA / JSON-LD ==================== -->
   <script type="application/ld+json">
@@ -163,7 +165,7 @@
     </div>
   </header>
 
-  <a id="top"></a>
+  <span id="top"></span>
 
   <!-- ============================================================= -->
   <!-- HERO -->
@@ -302,7 +304,7 @@
         </p>
       </div>
       <form class="cosearch__box reveal" data-reveal="fade-up" data-delay="200" action="companies/" method="get" role="search">
-        <label for="coq" style="position:absolute;left:-9999px">Company name or CIN</label>
+        <label for="coq" class="sr-only">Company name or CIN</label>
         <input id="coq" name="q" type="search" placeholder="Company name or CIN, e.g. U74999UP2020PTC..." autocomplete="off" />
         <button type="submit" class="btn btn--primary magnetic" data-cursor="button"><span>Search</span></button>
       </form>
@@ -691,7 +693,7 @@
             <span class="member__role">Founder</span>
             <p>Leads tax, audit and advisory. Fifteen years across statutory audit, GST litigation and cross-border structuring — the person clients call before a big decision.</p>
             <div class="member__links">
-              <a href="mailto:rudrajha0107@gmail.com" data-cursor="link" aria-label="Email CMA Sudarshan Jha">
+              <a href="#" data-mail="rudrajha0107|gmail.com" data-cursor="link" aria-label="Email CMA Sudarshan Jha">
                 <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M2 4h20v16H2zm10 7L3 5v14h18V5z"/></svg>
               </a>
               <a href="tel:+919315639676" data-cursor="link" aria-label="Call CMA Sudarshan Jha">
@@ -714,7 +716,7 @@
             <span class="member__role">Director</span>
             <p>Heads compliance operations and the Virtual-CFO practice. Turns messy books into board-ready numbers and keeps the filing calendar running like clockwork.</p>
             <div class="member__links">
-              <a href="mailto:rudrajha0107@gmail.com" data-cursor="link" aria-label="Email Arnav Gupta">
+              <a href="#" data-mail="rudrajha0107|gmail.com" data-cursor="link" aria-label="Email Arnav Gupta">
                 <svg viewBox="0 0 24 24" width="18" height="18"><path fill="currentColor" d="M2 4h20v16H2zm10 7L3 5v14h18V5z"/></svg>
               </a>
               <a href="tel:+919315639676" data-cursor="link" aria-label="Call Arnav Gupta">
@@ -972,7 +974,7 @@
         </article>
       </div>
 
-      <div style="text-align:center;margin-top:2.6rem">
+      <div class="u-center-cta">
         <a href="blog/" class="btn btn--ghost" data-cursor="link"><span>All insights →</span></a>
       </div>
     </div>
@@ -1016,7 +1018,7 @@
           </li>
           <li class="reveal" data-reveal="fade-right" data-delay="280" data-cursor="card">
             <span class="contact__ico"><svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M2 4h20v16H2zm10 7L3 5v14h18V5z"/></svg></span>
-            <div><small>Email</small><a href="mailto:rudrajha0107@gmail.com" data-cursor="link">rudrajha0107@gmail.com</a></div>
+            <div><small>Email</small><a href="#" data-mail="rudrajha0107|gmail.com" data-cursor="link"><span data-mail-text>Email us</span></a></div>
           </li>
           <li class="reveal" data-reveal="fade-right" data-delay="340" data-cursor="card">
             <span class="contact__ico"><svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 2a7 7 0 017 7c0 5-7 13-7 13S5 14 5 9a7 7 0 017-7zm0 9.5A2.5 2.5 0 1012 6a2.5 2.5 0 000 5.5z"/></svg></span>
@@ -1077,7 +1079,7 @@
             <svg viewBox="0 0 24 24" width="28" height="28"><path fill="currentColor" d="M12 2a7 7 0 017 7c0 5-7 13-7 13S5 14 5 9a7 7 0 017-7zm0 9.5A2.5 2.5 0 1012 6a2.5 2.5 0 000 5.5z"/></svg>
           </div>
           <strong>Vitt-Marg Advisors</strong>
-          <span>Suite 103, H-36, Sector 63, Noida · <a href="https://www.google.com/maps/search/?api=1&amp;query=Suite+103%2C+H-36%2C+H+Block%2C+Sector+63%2C+Noida%2C+Uttar+Pradesh+201301" target="_blank" rel="noopener" data-cursor="link" style="color:var(--primary);text-decoration:underline">Get directions</a></span>
+          <span>Suite 103, H-36, Sector 63, Noida · <a href="https://www.google.com/maps/search/?api=1&amp;query=Suite+103%2C+H-36%2C+H+Block%2C+Sector+63%2C+Noida%2C+Uttar+Pradesh+201301" target="_blank" rel="noopener" data-cursor="link" class="link-underline">Get directions</a></span>
         </div>
         <div class="map__grid"></div>
       </div>
@@ -1103,7 +1105,7 @@
       </div>
 
       <div class="footer__col">
-        <h4>Services</h4>
+        <h3>Services</h3>
         <a href="income-tax-consultant-noida/" data-cursor="link">Income Tax Consultant</a>
         <a href="itr-filing-noida/" data-cursor="link">Income Tax Returns</a>
         <a href="gst-registration-noida/" data-cursor="link">GST Registration</a>
@@ -1119,7 +1121,7 @@
       </div>
 
       <div class="footer__col">
-        <h4>Company</h4>
+        <h3>Company</h3>
         <a href="#why" data-cursor="link">Why Vitt-Marg</a>
         <a href="#process" data-cursor="link">Our Process</a>
         <a href="#team" data-cursor="link">Leadership</a>
@@ -1128,10 +1130,10 @@
       </div>
 
       <div class="footer__col footer__contact">
-        <h4>Reach us</h4>
+        <h3>Reach us</h3>
         <a href="tel:+919315639676" data-cursor="link">+91 93156 39676</a>
-        <a href="mailto:rudrajha0107@gmail.com" data-cursor="link">rudrajha0107@gmail.com</a>
-        <a href="https://www.google.com/maps/search/?api=1&amp;query=Suite+103%2C+H-36%2C+H+Block%2C+Sector+63%2C+Noida%2C+Uttar+Pradesh+201301" target="_blank" rel="noopener" data-cursor="link"><svg viewBox="0 0 24 24" width="13" height="13" aria-hidden="true" style="vertical-align:-2px;margin-right:.3rem"><path fill="currentColor" d="M12 2a7 7 0 00-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 00-7-7zm0 9.5A2.5 2.5 0 1112 6.5a2.5 2.5 0 010 5z"/></svg>Suite 103, H-36, H Block, Sector 63, Noida, Uttar Pradesh 201301</a>
+        <a href="#" data-mail="rudrajha0107|gmail.com" data-cursor="link"><span data-mail-text>Email us</span></a>
+        <address class="footer__addr"><a href="https://www.google.com/maps/search/?api=1&amp;query=Suite+103%2C+H-36%2C+H+Block%2C+Sector+63%2C+Noida%2C+Uttar+Pradesh+201301" target="_blank" rel="noopener" data-cursor="link"><svg viewBox="0 0 24 24" width="13" height="13" aria-hidden="true" style="vertical-align:-2px;margin-right:.3rem"><path fill="currentColor" d="M12 2a7 7 0 00-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 00-7-7zm0 9.5A2.5 2.5 0 1112 6.5a2.5 2.5 0 010 5z"/></svg>Suite 103, H-36, H Block, Sector 63, Noida, Uttar Pradesh 201301</a></address>
       </div>
     </div>
 
@@ -1152,7 +1154,7 @@
     <svg viewBox="0 0 24 24" width="20" height="20"><path fill="currentColor" d="M12 5l7 7-1.4 1.4L13 8.8V20h-2V8.8l-4.6 4.6L5 12z"/></svg>
   </button>
 
-  <script src="script.js?v=20261020"></script>
+  <script src="script.js?v=20261113"></script>
   <script src="whatsapp.js?v=1" defer></script>
 </body>
 </html>

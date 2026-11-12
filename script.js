@@ -1351,6 +1351,7 @@ window.addEventListener('load', () => {
   /* ---------- input formatting ---------- */
   function taxAttachFormat(id) {
     var input = taxEl(id);
+    if (!input) return; // the tax form is not on every page
     input.addEventListener('input', function () {
       var atEnd = input.selectionStart === input.value.length;
       if (input.value.trim() === '') return;
@@ -1397,6 +1398,7 @@ window.addEventListener('load', () => {
 
   /* ---------- boot ---------- */
   function taxBoot() {
+    if (!taxEl('taxSalary')) return; // the tax calculator is only on the income-tax page
     ['taxSalary', 'taxHouse', 'taxBusiness', 'taxCapital', 'taxOther', 'tax80C', 'tax80CCD', 'tax80D', 'taxLoan', 'taxHRA', 'taxPtax'].forEach(taxAttachFormat);
 
     document.querySelectorAll('input[name="taxSalaried"]').forEach(function (r) { r.addEventListener('change', function () { taxSalaried = this.value === 'yes'; }); });

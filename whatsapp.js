@@ -1,3 +1,13 @@
+/* Google Analytics (G-QH4NV2QME2): loaded on every page that includes this file, unless the page already has gtag */
+(function () {
+  if (window.gtag) return;
+  var s = document.createElement('script'); s.async = true;
+  s.src = 'https://www.googletagmanager.com/gtag/js?id=G-QH4NV2QME2';
+  document.head.appendChild(s);
+  window.dataLayer = window.dataLayer || [];
+  window.gtag = function () { window.dataLayer.push(arguments); };
+  window.gtag('js', new Date()); window.gtag('config', 'G-QH4NV2QME2');
+})();
 /* =================================================================
    VITT-MARG ADVISORS — WhatsApp chat button + greeting pop-up
    Self-contained: adds its own styles and markup. Does not touch

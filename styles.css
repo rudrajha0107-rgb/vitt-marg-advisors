@@ -2678,3 +2678,4 @@ body.page-svc a, body.page-svc button, body.page-svc summary { cursor: pointer; 
 .link-underline { color: var(--primary); text-decoration: underline; }
 .footer__addr { font-style: normal; }
 .footer__col h3 { font-family: var(--font-mono); font-size: .74rem; letter-spacing: .16em; text-transform: uppercase; }
+.hero__title .hero__eyebrow { display: flex; width: fit-content; font-weight: 500; line-height: 1.4; }

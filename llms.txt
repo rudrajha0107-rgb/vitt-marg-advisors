@@ -1,6 +1,6 @@
 # Vitt-Marg Advisors
 
-> Vitt-Marg Advisors is a CMA-led professional practice in Noida, Uttar Pradesh, India. It handles cost audit, internal audit, income tax, GST, company registration and ROC compliance for businesses in Delhi NCR.
+> Vitt-Marg Advisors is a CMA-led professional practice in Noida, Uttar Pradesh, India. It handles cost audit, cost sheets and product costing, statutory and tax audit, internal audit, CA certificates, NRI tax, income tax, GST, company registration and ROC compliance for businesses in Delhi NCR.
 
 - Address: Suite 103, H-36, H Block, Sector 63, Noida, Uttar Pradesh 201301, India
 - Phone: +91 93156 39676
@@ -8,6 +8,14 @@
 
 ## Services
 - [Cost Auditor in Noida](https://vittmarg.com/cost-auditor-noida/): cost audit, cost records (CRA-1 to CRA-4) and applicability checks
+- [Cost Sheet Preparation](https://vittmarg.com/cost-sheet-preparation-noida/): product-wise cost sheets and CAS-4 certificates
+- [Per-Unit Costing & Cost Control](https://vittmarg.com/product-costing-cost-control-noida/): break-even, standard costing and variance analysis
+- [Statutory & Tax Audit](https://vittmarg.com/statutory-tax-audit-noida/): company, LLP and income-tax audits
+- [CA Certificates](https://vittmarg.com/ca-certificates-noida/): Form 145/146 (15CA/15CB), net worth and turnover certificates
+- [NRI & HNI Tax](https://vittmarg.com/nri-hni-tax-consultant-noida/): NRI returns, DTAA, Schedule FA and capital gains
+- [Income Tax Notices & Appeals](https://vittmarg.com/income-tax-notice-scrutiny-appeal-noida/): scrutiny, reassessment, CIT(A) and ITAT
+- [GST Audit & Notices](https://vittmarg.com/gst-audit-notice-reply-noida/): GSTR-9C, departmental audit, notice replies and appeals
+- [Project Report & CMA Data](https://vittmarg.com/project-report-cma-data-noida/): bank loan project reports and CMA data
 - [Internal Auditor in Noida](https://vittmarg.com/internal-auditor-noida/): internal audit and process reviews
 - [Income Tax Consultant in Noida](https://vittmarg.com/income-tax-consultant-noida/): tax planning, notices and assessments
 - [ITR Filing in Noida](https://vittmarg.com/itr-filing-noida/): income tax returns for individuals and businesses

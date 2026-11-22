@@ -775,11 +775,16 @@ function initContactForm() {
       'Phone: ' + encodeURIComponent(val('phone')) + '%0A' +
       'Service: ' + encodeURIComponent(val('service')) + '%0A' +
       'Message: ' + encodeURIComponent(val('message'));
+    // save the enquiry on our server first, so it is not lost if WhatsApp is not sent
+    try {
+      fetch('/api/lead', { method: 'POST', keepalive: true, headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ name: val('name'), email: val('email'), phone: val('phone'), service: val('service'), message: val('message'), source: location.href }) }).catch(function () {});
+    } catch (err) {}
     const url = 'https://wa.me/919315639676?text=' + msg;
     const win = window.open(url, '_blank');
     if (win) { try { win.opener = null; } catch (err) {} } else { window.location.href = url; }
     if (submitText) submitText.textContent = 'Opening WhatsApp...';
-    note.textContent = 'WhatsApp is opening with your enquiry. Tap send, and a principal will reply within one working day. Or call 9315639676.';
+    note.textContent = 'WhatsApp is opening with your enquiry. We have also received your details, and a principal will reply within one working day.';
     note.className = 'contact__note is-success';
     setTimeout(() => { if (submitText) submitText.textContent = 'Send enquiry'; form.reset(); }, 2500);
   });

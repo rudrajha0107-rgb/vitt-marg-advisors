@@ -102,3 +102,12 @@
   if (document.readyState === 'loading') document.addEventListener('DOMContentLoaded', init);
   else init();
 })();
+
+/* On-Call Accountant popup (photo launcher + booking panel), served by the Cloudflare Worker.
+   Company pages already include it; this adds it to every other page of the site. */
+(function () {
+  if (document.querySelector('script[src*="/companies/_oc.js"]')) return;
+  var s = document.createElement('script');
+  s.src = '/companies/_oc.js?v=3'; s.defer = true;
+  (document.body || document.head).appendChild(s);
+})();

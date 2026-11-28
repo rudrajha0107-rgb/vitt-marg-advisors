@@ -780,7 +780,7 @@ function initContactForm() {
       fetch('/api/lead', { method: 'POST', keepalive: true, headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ name: val('name'), email: val('email'), phone: val('phone'), service: val('service'), message: val('message'), source: location.href }) }).catch(function () {});
     } catch (err) {}
-    const url = 'https://wa.me/918796021187?text=' + msg;
+    const url = 'https://wa.me/919315639676?text=' + msg;
     const win = window.open(url, '_blank');
     if (win) { try { win.opener = null; } catch (err) {} } else { window.location.href = url; }
     if (submitText) submitText.textContent = 'Opening WhatsApp...';
@@ -1293,7 +1293,7 @@ window.addEventListener('load', () => {
     doc.setFont('helvetica', 'normal'); doc.setFontSize(10); doc.setTextColor(120, 190, 245);
     doc.text('CMA-led Tax & Compliance Advisory  |  Income Tax Calculator', M, 62);
     doc.setTextColor(180, 190, 210);
-    doc.text('AY 2026-27 (FY 2025-26)  |  +91 87960 21187', M, 77);
+    doc.text('AY 2026-27 (FY 2025-26)  |  +91 93156 39676', M, 77);
     y = 122;
 
     doc.setTextColor(20, 30, 50); doc.setFont('helvetica', 'bold'); doc.setFontSize(16);
